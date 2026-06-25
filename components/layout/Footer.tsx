@@ -165,7 +165,7 @@ export default function Footer() {
         <div className="w-full h-[1px] bg-gray-100 mb-6" />
         
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] font-semibold text-gray-400 pb-8 text-center sm:text-left">
-          <span>Tac Solution @{new Date().getFullYear()}. All rights reserved.</span>
+          <span>Tac Solutions @{new Date().getFullYear()}. All rights reserved.</span>
           <span>
             Design &amp; Developed by{" "}
             <a 

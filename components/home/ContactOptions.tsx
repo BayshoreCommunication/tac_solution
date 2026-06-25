@@ -25,6 +25,7 @@ const OPTIONS = [
       iconBg: "bg-teal-50 border-teal-100/50 text-teal-600",
       titleClass: "text-teal-600",
       badgeBg: "bg-teal-50/50 text-teal-700 border-teal-100/30",
+      accentLineBg: "bg-teal-500",
     },
   },
   {
@@ -39,6 +40,7 @@ const OPTIONS = [
       iconBg: "bg-blue-50 border-blue-100/50 text-blue-600",
       titleClass: "text-blue-600",
       badgeBg: "bg-blue-50/50 text-blue-700 border-blue-100/30",
+      accentLineBg: "bg-blue-500",
     },
   },
   {
@@ -53,6 +55,7 @@ const OPTIONS = [
       iconBg: "bg-rose-50 border-rose-100/50 text-rose-600",
       titleClass: "text-rose-600",
       badgeBg: "bg-rose-50/50 text-rose-700 border-rose-100/30",
+      accentLineBg: "bg-rose-500",
     },
   },
   {
@@ -67,6 +70,7 @@ const OPTIONS = [
       iconBg: "bg-orange-50 border-orange-100/50 text-orange-600",
       titleClass: "text-orange-600",
       badgeBg: "bg-orange-50/50 text-orange-700 border-orange-100/30",
+      accentLineBg: "bg-orange-500",
     },
   },
 ];
@@ -100,15 +104,15 @@ export default function ContactOptions() {
                     {opt.icon}
                   </div>
                   <div className="flex flex-col min-w-0">
-                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider block mb-0.5 truncate">{opt.kicker}</span>
-                    <h3 className={`text-[15px] font-extrabold leading-snug truncate ${opt.theme.titleClass}`}>
+                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider block mb-0.5">{opt.kicker}</span>
+                    <h3 className={`text-[15px] font-extrabold leading-snug ${opt.theme.titleClass}`}>
                       {opt.title}
                     </h3>
                   </div>
                 </div>
 
-                {/* Divider Line */}
-                <div className="w-full h-[1px] bg-gray-100 my-4" />
+                {/* Accent Line */}
+                <div className={`w-8 h-[2px] ${opt.theme.accentLineBg} mb-4 mt-2`} />
 
                 {/* Description */}
                 <p className="text-[13px] sm:text-[14px] text-gray-500 leading-relaxed mb-6">
@@ -132,19 +136,22 @@ export default function ContactOptions() {
 
         {/* Bottom Consultation Banner Bar */}
         <div className="max-w-7xl mx-auto mt-8 md:mt-12">
-          <div className="bg-primary/5 border border-primary/10 rounded-[28px] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
-            <div className="flex items-center gap-4 text-left">
-              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-100/50 flex-shrink-0 text-primary">
-                <Calendar className="w-5 h-5 text-primary" />
+          <div className="bg-[#f9fafb] border border-gray-100 rounded-[28px] p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-left w-full md:w-auto">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-sm border border-gray-100/50 flex-shrink-0 text-primary">
+                  <Calendar className="w-5 h-5 text-primary" />
+                </div>
+                <div className="flex flex-col">
+                  <h4 className="text-[16px] font-extrabold text-gray-900 leading-snug">
+                    Not sure which option is right for you?
+                  </h4>
+                  <p className="text-[14px] font-medium text-gray-500 mt-1">
+                    We’ll help you choose the best next step.
+                  </p>
+                </div>
               </div>
-              <div className="flex flex-col">
-                <h4 className="text-[16px] font-extrabold text-gray-900 leading-snug">
-                  Not sure which option is right for you?
-                </h4>
-                <p className="text-[14px] font-medium text-gray-500 mt-1">
-                  We’ll help you choose the best next step.
-                </p>
-              </div>
+              <div className="hidden md:block w-[1px] h-10 bg-gray-200" />
             </div>
             
             <Link

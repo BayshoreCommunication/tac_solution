@@ -15,15 +15,15 @@ const lexend = Lexend({
   variable: "--font-lexend",
 });
 
-const siteUrl = "https://melamedlawpllc-v2-website.vercel.app/";
+const siteUrl = "https://tacsolutionsllc.com";
 const ogImageUrl = `${siteUrl}/og-image.png`;
 
 /* ---------------- METADATA ---------------- */
 
 export const metadata: Metadata = {
-  title: "Melamed Law Firm",
-  description: "Melamed Law Firm Website",
-  metadataBase: new URL("https://melamedlawpllc-v2-website.vercel.app/"),
+  title: "TAC Solutions",
+  description: "Empowering learners with in-demand tech skills, real-world projects, and career support to build a better future.",
+  metadataBase: new URL("https://tacsolutionsllc.com"),
   alternates: {
     canonical: "/",
     languages: {

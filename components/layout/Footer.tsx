@@ -62,7 +62,7 @@ export default function Footer() {
             <nav className="flex flex-col space-y-4 text-[14px] font-semibold text-gray-500">
               <Link href="/courses/cybersecurity" className="hover:text-primary transition-colors duration-200">Cybersecurity</Link>
               <Link href="/courses/grc-foundations" className="hover:text-primary transition-colors duration-200">GRC Foundations</Link>
-              <Link href="/courses/children-series" className="hover:text-primary transition-colors duration-200">Children's Cybersecurity Series</Link>
+              <Link href="/courses/children-series" className="hover:text-primary transition-colors duration-200">Children&apos;s Cybersecurity Series</Link>
               <Link href="/courses/teen-safety" className="hover:text-primary transition-colors duration-200">Teen Cyber Safety</Link>
               <Link href="/courses/digital-safety" className="hover:text-primary transition-colors duration-200">Digital Safety Basics</Link>
               <Link href="/courses/identity-protection" className="hover:text-primary transition-colors duration-200">Password &amp; Identity Protection</Link>

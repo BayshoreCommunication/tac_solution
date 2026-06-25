@@ -7,20 +7,6 @@ import RiskSensePricing from "components/home/RiskSensePricing";
 import ServicesIntegration from "components/home/ServicesIntegration";
 import ContactOptions from "components/home/ContactOptions";
 
-export const metadata = {
-  title: "",
-  description:
-    "",
-  alternates: {
-    canonical: "/",
-    languages: {
-      "en-US": "/en-USA",
-    },
-  }
-
-};
-
-
 export default function Home() {
   return (
     <div>

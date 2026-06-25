@@ -61,7 +61,7 @@ export default function ServicesIntegration() {
         </div>
 
         {/* 3-Card Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-7xl mx-auto -mt-[40px] lg:-mt-[80px]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-7xl mx-auto -mt-[20px] lg:-mt-[40px]">
           {SERVICES.map((service, index) => (
             <div
               key={index}

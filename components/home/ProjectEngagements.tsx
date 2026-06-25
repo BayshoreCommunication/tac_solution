@@ -57,7 +57,7 @@ export default function ProjectEngagements() {
       <Container className="relative z-10">
         
         {/* Header Title & Subtitle */}
-        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+        <div className="text-center max-w-7xl mx-auto mb-16 md:mb-20">
           <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-4">
             Project <span className="text-primary">Engagements</span> &amp; Add on Services
           </h2>

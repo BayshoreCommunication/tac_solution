@@ -79,7 +79,7 @@ export default function ProjectServices() {
             return (
               <div
                 key={index}
-                className="group relative flex flex-col justify-between rounded-[28px] p-6 sm:p-8 bg-white border border-gray-150/70 shadow-sm hover:border-primary hover:-translate-y-1.5 hover:shadow-lg transition-all duration-300 cursor-default"
+                className="premium-card group relative flex flex-col justify-between p-6 sm:p-8 cursor-default"
               >
                 {/* Upper Body */}
                 <div>
@@ -110,7 +110,7 @@ export default function ProjectServices() {
                 <div className="mt-auto">
                   <Link
                     href={`/services/${item.slug}`}
-                    className="btn-outline w-full h-12 text-[14px] font-bold flex items-center justify-center gap-2 transition-all duration-300 group-hover:bg-primary group-hover:text-white"
+                    className="btn-outline w-full h-12 text-[14px] font-bold flex items-center justify-center gap-2"
                   >
                     <span>Explore More</span>
                     <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

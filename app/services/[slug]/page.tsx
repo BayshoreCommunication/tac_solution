@@ -431,7 +431,7 @@ export default function ServiceDetailsPage() {
                   return (
                     <div 
                       key={idx}
-                      className="group bg-white border border-gray-150/70 rounded-2xl p-5 shadow-sm hover:border-primary/40 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default"
+                      className="premium-card p-5 cursor-default"
                     >
                       <div className="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center mb-4 text-primary transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                         <HighlightIcon className="w-5 h-5" />
@@ -465,7 +465,7 @@ export default function ServiceDetailsPage() {
                   return (
                     <div 
                       key={idx}
-                      className="group bg-white border border-gray-150/70 rounded-2xl p-5 shadow-sm hover:border-primary/40 hover:-translate-y-1 hover:shadow-md transition-all duration-300 cursor-default flex items-start gap-4"
+                      className="premium-card p-5 cursor-default flex items-start gap-4"
                     >
                       <div className="w-10 h-10 rounded-full bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:text-white">
                         <BenefitIcon className="w-5 h-5" />

@@ -145,7 +145,7 @@ export default function AdvisoryProcessDetails() {
               <h3 className="text-2xl lg:text-[24px] xl:text-[30px] font-bold text-gray-900 tracking-tight mb-6 text-center lg:text-left">
                 Key Deliverables
               </h3>
-              <div className="bg-white border border-gray-150 rounded-[24px] p-6 sm:p-8 shadow-sm h-full hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-md transition-all duration-300 cursor-default">
+              <div className="premium-card p-6 sm:p-8 cursor-default h-full">
                 <ul className="space-y-4">
                   {[
                     "Quarterly Board Reports",
@@ -168,7 +168,7 @@ export default function AdvisoryProcessDetails() {
               <h3 className="text-2xl lg:text-[24px] xl:text-[30px] font-bold text-gray-900 tracking-tight mb-6 text-center lg:text-left">
                 Expected Outcomes
               </h3>
-              <div className="bg-white border border-gray-150 rounded-[24px] p-6 sm:p-8 shadow-sm h-full hover:-translate-y-1.5 hover:border-primary/40 hover:shadow-md transition-all duration-300 cursor-default">
+              <div className="premium-card p-6 sm:p-8 cursor-default h-full">
                 <ul className="space-y-4">
                   {[
                     "Increased executive visibility into risk",

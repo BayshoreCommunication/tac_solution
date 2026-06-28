@@ -104,7 +104,7 @@ export default function RetainerModel() {
               >
                 {/* RECOMMENDED Badge */}
                 {plan.isRecommended && (
-                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-[11px] font-extrabold tracking-widest uppercase px-4 py-1.5 rounded-full z-10 shadow-sm border border-primary">
+                  <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-[11px] font-bold tracking-widest uppercase px-4 py-1.5 rounded-full z-10 shadow-sm border border-primary">
                     Recommended
                   </div>
                 )}
@@ -158,7 +158,7 @@ export default function RetainerModel() {
                       {plan.bestFor.icon}
                     </div>
                     <div className="flex flex-col">
-                      <span className="text-[11px] font-extrabold uppercase tracking-wider text-gray-400 leading-none mb-1">Best for:</span>
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 leading-none mb-1">Best for:</span>
                       <span className={`text-[12px] font-bold leading-tight transition-colors duration-300 ${
                         isActive ? "text-primary-dark" : "text-gray-600"
                       }`}>

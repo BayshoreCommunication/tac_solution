@@ -80,13 +80,13 @@ export default function OnlineCourses() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
 
                 {/* Status Badge */}
-                <span className={`absolute top-4 left-4 px-3 py-1 text-[10px] font-extrabold uppercase tracking-wider rounded-md text-white shadow-sm ${course.status.bgClass}`}>
+                <span className={`absolute top-4 left-4 px-3 py-1 text-[10px] font-bold uppercase tracking-wider rounded-md text-white shadow-sm ${course.status.bgClass}`}>
                   {course.status.text}
                 </span>
 
                 {/* Text Overlay */}
                 <div className="absolute bottom-4 left-4 right-4 z-10">
-                  <h3 className="text-[18px] sm:text-[20px] font-extrabold text-white leading-snug tracking-tight mb-1">
+                  <h3 className="text-[18px] sm:text-[20px] font-bold text-white leading-snug tracking-tight mb-1">
                     {course.title}
                   </h3>
                   <span className={`text-[12px] font-bold ${course.status.metaColor}`}>

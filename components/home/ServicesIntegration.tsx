@@ -74,11 +74,11 @@ export default function ServicesIntegration() {
                   {service.icon}
                 </div>
                 <div className="flex flex-col">
-                  <h3 className={`text-xl font-extrabold leading-tight ${service.theme.titleClass}`}>
+                  <h3 className={`text-xl font-bold leading-tight ${service.theme.titleClass}`}>
                     {service.title}
                   </h3>
                   <div className="mt-1.5">
-                    <span className={`inline-block px-3 py-0.5 text-[10px] font-extrabold tracking-wide rounded-md ${service.theme.badgeClass}`}>
+                    <span className={`inline-block px-3 py-0.5 text-[10px] font-bold tracking-wide rounded-md ${service.theme.badgeClass}`}>
                       {service.badge}
                     </span>
                   </div>

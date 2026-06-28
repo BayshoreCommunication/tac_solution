@@ -19,6 +19,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "About Us", href: "/about" },
   {
     label: "Fractional CRO",
+    href: "/fractional-cro",
     children: [
       {
         label: "What is Fractional CRO?",
@@ -42,50 +43,24 @@ const NAV_ITEMS: NavItem[] = [
 
 function Dropdown({
   item,
-  isOpen,
-  onToggle,
 }: {
   item: NavItem;
-  isOpen: boolean;
-  onToggle: () => void;
 }) {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClick(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) {
-        if (isOpen) onToggle();
-      }
-    }
-    document.addEventListener("mousedown", handleClick);
-    return () => document.removeEventListener("mousedown", handleClick);
-  }, [isOpen, onToggle]);
-
   return (
-    <div ref={ref} className="relative">
-      <button
-        onClick={onToggle}
-        className="flex items-center gap-1 px-1 py-2 text-[15px] font-medium text-gray-700 hover:text-primary transition-colors duration-200 group"
-        aria-expanded={isOpen}
-        aria-haspopup="true"
+    <div className="relative group">
+      <Link
+        href={item.href!}
+        className="flex items-center gap-1 px-3 py-2 text-[15px] font-medium text-gray-700 hover:text-primary transition-colors duration-200 group"
       >
         {item.label}
         <ChevronDown
           size={15}
-          className={`mt-0.5 transition-transform duration-300 ${
-            isOpen ? "rotate-180 text-primary" : "text-gray-500 group-hover:text-primary"
-          }`}
+          className="mt-0.5 transition-transform duration-300 text-gray-500 group-hover:text-primary group-hover:rotate-180"
         />
-      </button>
+      </Link>
 
       {/* Dropdown panel */}
-      <div
-        className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-72 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden transition-all duration-300 origin-top z-50 ${
-          isOpen
-            ? "opacity-100 scale-100 translate-y-0 pointer-events-auto"
-            : "opacity-0 scale-95 -translate-y-2 pointer-events-none"
-        }`}
-      >
+      <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-72 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden transition-all duration-300 origin-top z-50 opacity-0 scale-95 -translate-y-2 pointer-events-none group-hover:opacity-100 group-hover:scale-100 group-hover:translate-y-0 group-hover:pointer-events-auto">
         {/* top accent bar */}
         <div className="h-1 w-full bg-primary" />
 
@@ -94,7 +69,6 @@ function Dropdown({
             <Link
               key={child.href}
               href={child.href}
-              onClick={onToggle}
               className="flex flex-col px-4 py-3 hover:bg-violet-50 transition-colors duration-150 group/item"
             >
               <span className="text-[14px] font-semibold text-gray-800 group-hover/item:text-primary transition-colors">
@@ -185,20 +159,29 @@ function MobileMenu({
               const isExpanded = openDropdown === item.label;
               return (
                 <div key={item.label} className="mb-1">
-                  <button
-                    onClick={() =>
-                      setOpenDropdown(isExpanded ? null : item.label)
-                    }
-                    className="flex items-center justify-between w-full px-3 py-3 rounded-lg text-[15px] font-medium text-gray-700 hover:bg-violet-50 hover:text-primary transition-all duration-150"
-                  >
-                    {item.label}
-                    <ChevronDown
-                      size={16}
-                      className={`transition-transform duration-300 ${
-                        isExpanded ? "rotate-180 text-primary" : "text-gray-400"
-                      }`}
-                    />
-                  </button>
+                  <div className="flex items-center justify-between w-full rounded-lg text-[15px] font-medium text-gray-700 hover:bg-violet-50 hover:text-primary transition-all duration-150">
+                    <Link
+                      href={item.href!}
+                      onClick={onClose}
+                      className="flex-1 px-3 py-3 text-left"
+                    >
+                      {item.label}
+                    </Link>
+                    <button
+                      onClick={() =>
+                        setOpenDropdown(isExpanded ? null : item.label)
+                      }
+                      className="p-3"
+                      aria-label="Toggle submenu"
+                    >
+                      <ChevronDown
+                        size={16}
+                        className={`transition-transform duration-300 ${
+                          isExpanded ? "rotate-180 text-primary" : "text-gray-400"
+                        }`}
+                      />
+                    </button>
+                  </div>
                   <div
                     className={`overflow-hidden transition-all duration-300 ${
                       isExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
@@ -301,8 +284,6 @@ export default function Navbar() {
                     <Dropdown
                       key={item.label}
                       item={item}
-                      isOpen={openDropdown === item.label}
-                      onToggle={() => toggleDropdown(item.label)}
                     />
                   );
                 }

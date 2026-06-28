@@ -11,120 +11,122 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-white border-t border-gray-100 pt-16">
+    <footer className="relative bg-gray-50/30 py-8 md:py-12 border-t border-gray-100/50">
       <Container className="relative z-10">
         
-        {/* Main Footer Links (4 Columns Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 max-w-7xl mx-auto">
+        {/* Main Footer Rounded Card Wrapper */}
+        <div className="bg-white border border-gray-150/70 rounded-[32px] p-8 sm:p-12 shadow-sm w-full">
           
-          {/* Column 1: Logo & Brand Description */}
-          <div className="lg:col-span-4 flex flex-col items-start text-left">
-            <div className="relative w-[130px] sm:w-[155px] lg:w-[175px] mb-6">
-              <Image 
-                src="/images/logo.png" 
-                alt="Logo" 
-                width={500} 
-                height={400} 
-                className="w-full h-auto object-contain"
-                priority
-              />
-            </div>
+          {/* Main Footer Links (4 Columns Grid) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 mb-12">
             
-            <p className="text-[14px] font-medium leading-[1.7] text-gray-500 mb-6 max-w-[320px]">
-              Empowering learners with in-demand tech skills, real-world projects, and career support to build a better future.
-            </p>
-            
-            {/* Accent Line */}
-            <div className="w-12 h-1 bg-primary rounded-full" />
-          </div>
-
-          {/* Column 2: Company */}
-          <div className="lg:col-span-2 flex flex-col items-start text-left">
-            <h4 className="text-[12px] font-extrabold tracking-wider text-primary uppercase mb-2">
-              Company
-            </h4>
-            <div className="w-8 h-[2px] bg-primary mb-6" />
-            <nav className="flex flex-col space-y-4 text-[14px] font-semibold text-gray-500">
-              <Link href="/about" className="hover:text-primary transition-colors duration-200">About us</Link>
-              <Link href="/fractional-cro" className="hover:text-primary transition-colors duration-200">Fractional CRO</Link>
-              <Link href="/services" className="hover:text-primary transition-colors duration-200">Services</Link>
-              <Link href="/learning-hub" className="hover:text-primary transition-colors duration-200">Learning Hub</Link>
-              <Link href="/contact" className="hover:text-primary transition-colors duration-200">Contact</Link>
-            </nav>
-          </div>
-
-          {/* Column 3: Courses */}
-          <div className="lg:col-span-3 flex flex-col items-start text-left">
-            <h4 className="text-[12px] font-extrabold tracking-wider text-primary uppercase mb-2">
-              Courses
-            </h4>
-            <div className="w-8 h-[2px] bg-primary mb-6" />
-            <nav className="flex flex-col space-y-4 text-[14px] font-semibold text-gray-500">
-              <Link href="/courses/cybersecurity" className="hover:text-primary transition-colors duration-200">Cybersecurity</Link>
-              <Link href="/courses/grc-foundations" className="hover:text-primary transition-colors duration-200">GRC Foundations</Link>
-              <Link href="/courses/children-series" className="hover:text-primary transition-colors duration-200">Children&apos;s Cybersecurity Series</Link>
-              <Link href="/courses/teen-safety" className="hover:text-primary transition-colors duration-200">Teen Cyber Safety</Link>
-              <Link href="/courses/digital-safety" className="hover:text-primary transition-colors duration-200">Digital Safety Basics</Link>
-              <Link href="/courses/identity-protection" className="hover:text-primary transition-colors duration-200">Password &amp; Identity Protection</Link>
-            </nav>
-          </div>
-
-          {/* Column 4: Contact */}
-          <div className="lg:col-span-3 flex flex-col items-start text-left">
-            <h4 className="text-[12px] font-extrabold tracking-wider text-primary uppercase mb-2">
-              Contact
-            </h4>
-            <div className="w-8 h-[2px] bg-primary mb-6" />
-            <div className="flex flex-col space-y-4 w-full">
+            {/* Column 1: Logo & Brand Description */}
+            <div className="lg:col-span-4 flex flex-col items-start text-left">
+              <div className="relative w-[130px] sm:w-[155px] lg:w-[175px] mb-6">
+                <Image 
+                  src="/images/logo.png" 
+                  alt="TAC Solutions Logo" 
+                  width={500} 
+                  height={400} 
+                  className="w-full h-auto object-contain"
+                  priority
+                />
+              </div>
               
-              {/* Email */}
-              <div className="flex items-center gap-3 group">
-                <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                  <Mail className="w-4 h-4" />
-                </div>
-                <a href="mailto:info@tacsolutionsllc.com" className="text-[14px] font-semibold text-gray-600 hover:text-primary transition-colors truncate">
-                  tacsolutionsllc.com
-                </a>
-              </div>
-
-              {/* Phone */}
-              <div className="flex items-center gap-3 group">
-                <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                  <Phone className="w-4 h-4" />
-                </div>
-                <a href="tel:+18137085566" className="text-[14px] font-semibold text-gray-600 hover:text-primary transition-colors">
-                  +1 (813) 708-5566
-                </a>
-              </div>
-
-              {/* Location 1 */}
-              <div className="flex items-center gap-3 group">
-                <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                <span className="text-[14px] font-semibold text-gray-600">
-                  Washington, DC, USA
-                </span>
-              </div>
-
-              {/* Location 2 */}
-              <div className="flex items-center gap-3 group">
-                <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                  <MapPin className="w-4 h-4" />
-                </div>
-                <span className="text-[14px] font-semibold text-gray-600">
-                  Greensboro, NC, USA
-                </span>
-              </div>
-
+              <p className="text-[14px] font-medium leading-[1.7] text-gray-500 mb-6 max-w-[325px]">
+                Empowering learners with in-demand tech skills, real-world projects, and career support to build a better future.
+              </p>
+              
+              {/* Accent Line */}
+              <div className="w-12 h-[3px] bg-primary rounded-full" />
             </div>
+
+            {/* Column 2: Company */}
+            <div className="lg:col-span-2 flex flex-col items-start text-left">
+              <h4 className="text-[12px] font-bold tracking-wider text-primary uppercase mb-2">
+                Company
+              </h4>
+              <div className="w-8 h-[2px] bg-primary mb-6" />
+              <nav className="flex flex-col space-y-4 text-[14px] font-semibold text-gray-500">
+                <Link href="/about" className="hover:text-primary transition-colors duration-200">About us</Link>
+                <Link href="/fractional-cro" className="hover:text-primary transition-colors duration-200">Fractional CRO</Link>
+                <Link href="/services" className="hover:text-primary transition-colors duration-200">Services</Link>
+                <Link href="/learning-hub" className="hover:text-primary transition-colors duration-200">Learning Hub</Link>
+                <Link href="/contact" className="hover:text-primary transition-colors duration-200">Contact</Link>
+              </nav>
+            </div>
+
+            {/* Column 3: Courses */}
+            <div className="lg:col-span-3 flex flex-col items-start text-left">
+              <h4 className="text-[12px] font-bold tracking-wider text-primary uppercase mb-2">
+                Courses
+              </h4>
+              <div className="w-8 h-[2px] bg-primary mb-6" />
+              <nav className="flex flex-col space-y-4 text-[14px] font-semibold text-gray-500">
+                <Link href="/courses/cybersecurity" className="hover:text-primary transition-colors duration-200">Cybersecurity</Link>
+                <Link href="/courses/grc-foundations" className="hover:text-primary transition-colors duration-200">GRC Foundations</Link>
+                <Link href="/courses/children-series" className="hover:text-primary transition-colors duration-200">Children&apos;s Cybersecurity Series</Link>
+                <Link href="/courses/teen-safety" className="hover:text-primary transition-colors duration-200">Teen Cyber Safety</Link>
+                <Link href="/courses/digital-safety" className="hover:text-primary transition-colors duration-200">Digital Safety Basics</Link>
+                <Link href="/courses/identity-protection" className="hover:text-primary transition-colors duration-200">Password &amp; Identity Protection</Link>
+              </nav>
+            </div>
+
+            {/* Column 4: Contact */}
+            <div className="lg:col-span-3 flex flex-col items-start text-left">
+              <h4 className="text-[12px] font-bold tracking-wider text-primary uppercase mb-2">
+                Contact
+              </h4>
+              <div className="w-8 h-[2px] bg-primary mb-6" />
+              <div className="flex flex-col space-y-4 w-full">
+                
+                {/* Email */}
+                <div className="flex items-center gap-3 group">
+                  <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Mail className="w-4 h-4" />
+                  </div>
+                  <a href="mailto:info@tacsolutions.biz" className="text-[14px] font-semibold text-gray-600 hover:text-primary transition-colors truncate">
+                    info@tacsolutions.biz
+                  </a>
+                </div>
+
+                {/* Phone */}
+                <div className="flex items-center gap-3 group">
+                  <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <a href="tel:+17036883038" className="text-[14px] font-semibold text-gray-600 hover:text-primary transition-colors">
+                    +1 (703) 688-3038
+                  </a>
+                </div>
+
+                {/* Location 1 */}
+                <div className="flex items-center gap-3 group">
+                  <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <span className="text-[14px] font-semibold text-gray-600">
+                    Washington, DC, USA
+                  </span>
+                </div>
+
+                {/* Location 2 */}
+                <div className="flex items-center gap-3 group">
+                  <div className="w-8 h-8 rounded-lg bg-primary/5 flex items-center justify-center text-primary flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <MapPin className="w-4 h-4" />
+                  </div>
+                  <span className="text-[14px] font-semibold text-gray-600">
+                    Greensboro, NC, USA
+                  </span>
+                </div>
+
+              </div>
+            </div>
+
           </div>
 
-        </div>
-
-        {/* Newsletter Subscription Bar Container */}
-        <div className="max-w-7xl mx-auto my-12">
-          <div className="bg-[#f5f3ff] sm:bg-[#f5f3ff]/60 border border-primary/5 rounded-[28px] p-6 sm:p-8 flex flex-col lg:flex-row items-center justify-between gap-6 shadow-sm">
+          {/* Newsletter Subscription Bar Container */}
+          <div className="bg-[#f5f3ff]/65 border border-primary/5 rounded-[20px] p-6 flex flex-col lg:flex-row items-center justify-between gap-6 mb-8">
             
             {/* Left Block (Mail icon + text info) */}
             <div className="flex items-center gap-4 text-left w-full lg:w-auto">
@@ -132,7 +134,7 @@ export default function Footer() {
                 <Mail className="w-6 h-6" />
               </div>
               <div className="flex flex-col">
-                <h4 className="text-[16px] font-extrabold text-gray-900 leading-snug">
+                <h4 className="text-[16px] font-bold text-gray-900 leading-snug">
                   Stay Updated with TAC SOLUTIONS
                 </h4>
                 <p className="text-[13px] font-medium text-gray-500 mt-1 leading-tight">
@@ -147,36 +149,37 @@ export default function Footer() {
                 type="email" 
                 placeholder="Enter your email..." 
                 required
-                className="w-full lg:w-80 h-12 px-4 rounded-lg bg-white border border-gray-200 text-[14px] text-gray-700 focus:border-primary transition-all outline-none"
+                className="w-full lg:w-80 h-12 px-4 rounded-xl bg-white border border-gray-200 text-[14px] text-gray-700 focus:border-primary transition-all outline-none"
               />
               <button
                 type="submit"
-                className="btn-primary px-8 h-12 text-[14.5px] font-semibold flex items-center justify-center gap-2 flex-shrink-0"
+                className="btn-primary inline-flex items-center justify-center whitespace-nowrap h-12 px-6 text-[14.5px] rounded-xl flex-shrink-0 gap-2 group"
               >
                 <span>Subscribe</span>
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5" />
               </button>
             </form>
 
           </div>
-        </div>
 
-        {/* Bottom Copyright Row */}
-        <div className="w-full h-[1px] bg-gray-100 mb-6" />
-        
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] font-semibold text-gray-400 pb-8 text-center sm:text-left">
-          <span><span className="text-primary hover:underline transition-colors">Tac Solutions</span> @{new Date().getFullYear()}. All rights reserved.</span>
-          <span>
-            Design &amp; Developed by{" "}
-            <a 
-              href="https://bayshorecommunication.com" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-primary hover:underline transition-colors"
-            >
-              Bayshore Communication
-            </a>
-          </span>
+          {/* Bottom Copyright Row */}
+          <div className="w-full h-[1px] bg-gray-100 mb-6" />
+          
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[12px] font-semibold text-gray-400 text-center sm:text-left">
+            <span><span className=" text-primary font-extrabold">TAC Solutions, LLC</span> @2026. All rights reserved.</span>
+            <span>
+              Design &amp; Developed by{" "}
+              <a 
+                href="https://bayshorecommunication.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-primary hover:underline transition-colors"
+              >
+                Bayshore Communication
+              </a>
+            </span>
+          </div>
+
         </div>
 
       </Container>

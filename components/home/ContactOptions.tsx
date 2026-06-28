@@ -105,7 +105,7 @@ export default function ContactOptions() {
                   </div>
                   <div className="flex flex-col min-w-0">
                     <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider block mb-0.5">{opt.kicker}</span>
-                    <h3 className={`text-[15px] font-extrabold leading-snug ${opt.theme.titleClass}`}>
+                    <h3 className={`text-[15px] font-bold leading-snug ${opt.theme.titleClass}`}>
                       {opt.title}
                     </h3>
                   </div>
@@ -143,7 +143,7 @@ export default function ContactOptions() {
                   <Calendar className="w-5 h-5 text-primary" />
                 </div>
                 <div className="flex flex-col">
-                  <h4 className="text-[16px] font-extrabold text-gray-900 leading-snug">
+                  <h4 className="text-[16px] font-bold text-gray-900 leading-snug">
                     Not sure which option is right for you?
                   </h4>
                   <p className="text-[14px] font-medium text-gray-500 mt-1">

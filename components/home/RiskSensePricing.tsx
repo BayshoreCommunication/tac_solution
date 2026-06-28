@@ -110,7 +110,7 @@ export default function RiskSensePricing() {
           <div className="group lg:col-span-7 flex flex-col bg-white rounded-[32px] p-6 sm:p-8 border-2 border-gray-100/80 shadow-sm hover:shadow-xl hover:border-primary hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]">
             <div className="flex items-center gap-3 mb-6 border-b border-gray-50 pb-4">
               <LayoutDashboard className="h-6 w-6 text-primary" strokeWidth={1.5} />
-              <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-primary transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
                 Manager dashboard
               </h3>
             </div>
@@ -200,7 +200,7 @@ export default function RiskSensePricing() {
                   <div className="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
                     <span className="text-[9px] font-bold text-gray-400 uppercase tracking-wider block mb-1">Low confidence</span>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-xl font-extrabold text-red-600">7</span>
+                      <span className="text-xl font-bold text-red-600">7</span>
                       {/* mini bar squares mockup */}
                       <div className="flex gap-0.5">
                         <span className="w-1.5 h-3 bg-red-100 rounded-sm" />
@@ -213,7 +213,7 @@ export default function RiskSensePricing() {
                   <div className="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
                     <span className="text-[9px] font-bold text-gray-400 uppercase tracking-wider block mb-1">Hard-rule triggers</span>
                     <div className="flex items-baseline gap-2">
-                      <span className="text-xl font-extrabold text-orange-500">4</span>
+                      <span className="text-xl font-bold text-orange-500">4</span>
                       {/* mini bar squares mockup */}
                       <div className="flex gap-0.5">
                         <span className="w-1.5 h-3 bg-orange-100 rounded-sm" />
@@ -233,7 +233,7 @@ export default function RiskSensePricing() {
           <div className="group lg:col-span-5 flex flex-col bg-white rounded-[32px] p-6 sm:p-8 border-2 border-gray-100/80 shadow-sm hover:shadow-xl hover:border-primary hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]">
             <div className="flex items-center gap-3 mb-6 border-b border-gray-50 pb-4">
               <Tag className="h-6 w-6 text-primary" strokeWidth={1.5} />
-              <h3 className="text-2xl font-extrabold text-gray-900 group-hover:text-primary transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-gray-900 group-hover:text-primary transition-colors duration-300">
                 Pricing model
               </h3>
             </div>

@@ -75,7 +75,7 @@ export default function RiskSense() {
                 </div>
 
                 {/* Number Badge */}
-                <div className="absolute top-1 left-1 w-6 h-6 rounded-full bg-primary text-white text-[11px] font-extrabold flex items-center justify-center shadow-sm z-20">
+                <div className="absolute top-1 left-1 w-6 h-6 rounded-full bg-primary text-white text-[11px] font-bold flex items-center justify-center shadow-sm z-20">
                   {step.number}
                 </div>
 
@@ -90,7 +90,7 @@ export default function RiskSense() {
               {/* Step Detail Card */}
               <div className="w-full flex-1 bg-white rounded-3xl p-6 sm:p-8 border-2 border-gray-100/80 shadow-sm group-hover:border-primary group-hover:shadow-xl group-hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] flex flex-col">
                 {/* Title */}
-                <h3 className="text-[18px] font-extrabold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-[18px] font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors duration-300">
                   {step.title}
                 </h3>
                 

@@ -1,15 +1,15 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { 
-  Check, 
-  ArrowRight, 
-  ClipboardList, 
-  Users, 
-  Building2, 
-  Star, 
-  Crown, 
-  Shield 
+import {
+  Check,
+  ArrowRight,
+  ClipboardList,
+  Users,
+  Building2,
+  Star,
+  Crown,
+  Shield,
 } from "lucide-react";
 import Container from "components/layout/Container";
 
@@ -17,7 +17,12 @@ const PLANS = [
   {
     title: "Essentials",
     hours: "up to 20 hrs",
-    icon: <ClipboardList className="h-6 w-6 transition-colors duration-300" strokeWidth={1.5} />,
+    icon: (
+      <ClipboardList
+        className="h-6 w-6 transition-colors duration-300"
+        strokeWidth={1.5}
+      />
+    ),
     features: [
       "Risk posture assessment & gap analysis",
       "Policy and control framework review",
@@ -34,7 +39,12 @@ const PLANS = [
   {
     title: "Advisory",
     hours: "up to 40 hrs",
-    icon: <Users className="h-6 w-6 transition-colors duration-300" strokeWidth={1.5} />,
+    icon: (
+      <Users
+        className="h-6 w-6 transition-colors duration-300"
+        strokeWidth={1.5}
+      />
+    ),
     features: [
       "Full vCISO / CRO advisory function",
       "Board-level risk reporting & presentation",
@@ -52,12 +62,17 @@ const PLANS = [
   {
     title: "Executive",
     hours: "embedded",
-    icon: <Building2 className="h-6 w-6 transition-colors duration-300" strokeWidth={1.5} />,
+    icon: (
+      <Building2
+        className="h-6 w-6 transition-colors duration-300"
+        strokeWidth={1.5}
+      />
+    ),
     features: [
       "Embedded CRO-level leadership presence",
       "M&A / integration risk advisory",
       "EU regulatory compliance (NIS2, DORA, AI Act)",
-      "ServiceNow IRM implementation oversight",
+      "IRM implementation oversight",
       "Board seat advisory support",
       "Full incident response management",
     ],
@@ -75,21 +90,24 @@ export default function RetainerModel() {
   return (
     <section className="relative bg-[#f8fafc] py-8 md:py-12 overflow-hidden border-t border-gray-100">
       <Container className="relative z-10">
-        
         {/* Header Title & Subtitle */}
         <div className="text-center max-w-3xl mx-auto mb-8 md:mb-12">
           <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-4">
-            Fractional <span className="text-primary">CRO / vCISO</span> Retainer Model
+            Fractional <span className="text-primary">CRO / vCISO</span>{" "}
+            Retainer Model
           </h2>
           <p className="text-[15px] sm:text-base text-gray-500 font-medium max-w-2xl mx-auto leading-relaxed">
-            Senior risk leadership embedded into your team — without the full-time executive cost
+            Senior risk leadership embedded into your team — without the
+            full-time executive cost
           </p>
         </div>
 
         {/* 3-Card Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8 items-stretch max-w-7xl mx-auto">
           {PLANS.map((plan, index) => {
-            const isActive = hoveredIndex === index || (hoveredIndex === null && plan.isRecommended);
+            const isActive =
+              hoveredIndex === index ||
+              (hoveredIndex === null && plan.isRecommended);
 
             return (
               <div
@@ -112,11 +130,13 @@ export default function RetainerModel() {
                 {/* Upper Section */}
                 <div>
                   {/* Icon Wrapper */}
-                  <div className={`w-14 h-14 rounded-full flex items-center justify-center mb-5 border transition-colors duration-300 ${
-                    isActive 
-                      ? "bg-primary/5 border-primary/10 text-primary" 
-                      : "bg-gray-50 border-gray-100 text-gray-700"
-                  }`}>
+                  <div
+                    className={`w-14 h-14 rounded-full flex items-center justify-center mb-5 border transition-colors duration-300 ${
+                      isActive
+                        ? "bg-primary/5 border-primary/10 text-primary"
+                        : "bg-gray-50 border-gray-100 text-gray-700"
+                    }`}
+                  >
                     {plan.icon}
                   </div>
 
@@ -126,19 +146,27 @@ export default function RetainerModel() {
                   </h3>
 
                   {/* Accent Line */}
-                  <div className={`w-8 h-[2px] my-3.5 transition-colors duration-300 ${
-                    isActive ? "bg-primary" : "bg-gray-300"
-                  }`} />
+                  <div
+                    className={`w-8 h-[2px] my-3.5 transition-colors duration-300 ${
+                      isActive ? "bg-primary" : "bg-gray-300"
+                    }`}
+                  />
 
                   {/* Hours / Retention frequency */}
                   <p className="text-[14px] text-gray-500 font-medium">
-                    per month <span className="text-gray-300 mx-1.5">•</span> <span className="text-gray-800 font-bold">{plan.hours}</span>
+                    per month <span className="text-gray-300 mx-1.5">•</span>{" "}
+                    <span className="text-gray-800 font-bold">
+                      {plan.hours}
+                    </span>
                   </p>
 
                   {/* Feature Bullet Points */}
                   <ul className="space-y-4 my-8">
                     {plan.features.map((feature, fIndex) => (
-                      <li key={fIndex} className="flex items-start text-[14px] text-gray-700 leading-normal">
+                      <li
+                        key={fIndex}
+                        className="flex items-start text-[14px] text-gray-700 leading-normal"
+                      >
                         <span className="flex-shrink-0 w-5 h-5 rounded-full bg-black text-white flex items-center justify-center mr-3 mt-0.5">
                           <Check className="w-3.5 h-3.5" strokeWidth={3} />
                         </span>
@@ -151,17 +179,23 @@ export default function RetainerModel() {
                 {/* Lower Section (Best For + Button) */}
                 <div>
                   {/* Best For Box */}
-                  <div className={`rounded-2xl p-4 flex items-center gap-3 mb-6 transition-colors duration-300 ${
-                    isActive ? "bg-primary/5" : "bg-gray-50"
-                  }`}>
+                  <div
+                    className={`rounded-2xl p-4 flex items-center gap-3 mb-6 transition-colors duration-300 ${
+                      isActive ? "bg-primary/5" : "bg-gray-50"
+                    }`}
+                  >
                     <div className="w-7 h-7 rounded-full bg-white flex items-center justify-center flex-shrink-0 shadow-sm border border-gray-100">
                       {plan.bestFor.icon}
                     </div>
                     <div className="flex flex-col">
-                      <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 leading-none mb-1">Best for:</span>
-                      <span className={`text-[12px] font-bold leading-tight transition-colors duration-300 ${
-                        isActive ? "text-primary-dark" : "text-gray-600"
-                      }`}>
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-gray-400 leading-none mb-1">
+                        Best for:
+                      </span>
+                      <span
+                        className={`text-[12px] font-bold leading-tight transition-colors duration-300 ${
+                          isActive ? "text-primary-dark" : "text-gray-600"
+                        }`}
+                      >
                         {plan.bestFor.text}
                       </span>
                     </div>
@@ -178,12 +212,10 @@ export default function RetainerModel() {
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
-
               </div>
             );
           })}
         </div>
-
       </Container>
     </section>
   );

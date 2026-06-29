@@ -89,7 +89,7 @@ export default function RiskSense() {
               {/* Step Circle & Floating Ring */}
               <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center mb-8">
                 {/* Dashed spinning outer ring */}
-                <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary/20 group-hover:border-primary/45 transition-colors duration-500 animate-spin-slow" />
+                <div className="absolute inset-0 rounded-full border-2 border-dashed border-primary group-hover:border-primary/45 transition-colors duration-500 animate-spin-slow" />
 
                 {/* Step Circle Container */}
                 <div className="w-18 h-18 sm:w-22 sm:h-22 rounded-full bg-white flex items-center justify-center shadow-md border border-gray-100 group-hover:border-primary/20 group-hover:shadow-lg transition-all duration-300 z-10">

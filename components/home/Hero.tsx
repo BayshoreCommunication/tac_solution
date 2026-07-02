@@ -690,9 +690,9 @@ export default function Hero() {
           }
 
           .hero-orbit-shell {
-            left: -8%;
+            left: 0;
             top: 13%;
-            width: 64%;
+            width: 52%;
           }
 
           .hero-feature-card {

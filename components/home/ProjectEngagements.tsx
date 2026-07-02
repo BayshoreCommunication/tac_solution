@@ -15,6 +15,7 @@ import Container from "components/layout/Container";
 const ENGAGEMENTS = [
   {
     title: "GRC rapid assessment",
+    slug: "grc-rapid-assessment",
     badge: "ENTRY POINT",
     icon: (
       <Gauge
@@ -27,6 +28,7 @@ const ENGAGEMENTS = [
   },
   {
     title: "Board risk advisory",
+    slug: "board-risk-advisory",
     badge: "GOVERNANCE",
     icon: (
       <Users
@@ -39,6 +41,7 @@ const ENGAGEMENTS = [
   },
   {
     title: "Regulatory Advisory",
+    slug: "regulatory-advisory-services",
     badge: "EU REGULATORY",
     icon: (
       <Globe
@@ -51,6 +54,7 @@ const ENGAGEMENTS = [
   },
   {
     title: "IRM Consulting",
+    slug: "irm-consulting",
     badge: "TECHNOLOGY",
     icon: (
       <Cloud
@@ -63,6 +67,7 @@ const ENGAGEMENTS = [
   },
   {
     title: "AI governance",
+    slug: "ai-governance",
     badge: "HEALTHCARE AI",
     icon: (
       <Activity
@@ -75,6 +80,7 @@ const ENGAGEMENTS = [
   },
   {
     title: "M&A risk due diligence",
+    slug: "ma-risk-due-diligence",
     badge: "M&A",
     icon: (
       <Handshake
@@ -106,9 +112,10 @@ export default function ProjectEngagements() {
         {/* 6-Card Grid (2 Rows on Desktop) */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-8 items-stretch max-w-7xl mx-auto">
           {ENGAGEMENTS.map((item, index) => (
-            <div
+            <Link
               key={index}
-              className="group relative flex flex-col justify-between bg-white rounded-[28px] p-6 sm:p-8 border-2 border-gray-100/80 shadow-sm hover:shadow-xl hover:border-primary hover:scale-100 lg:hover:scale-[1.03] hover:z-10 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)]"
+              href={`/services/${item.slug}`}
+              className="group relative flex flex-col justify-between bg-white rounded-[28px] p-6 sm:p-8 border-2 border-gray-100/80 shadow-sm hover:shadow-xl hover:border-primary hover:scale-100 lg:hover:scale-[1.03] hover:z-10 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] cursor-pointer"
             >
               {/* Upper Body */}
               <div>
@@ -140,15 +147,14 @@ export default function ProjectEngagements() {
 
               {/* CTA Button at bottom */}
               <div className="mt-auto">
-                <Link
-                  href="/contact"
+                <div
                   className="btn-outline w-full h-12 lg:h-14 text-[14.5px] font-semibold flex items-center justify-center gap-2"
                 >
                   <span>Explore More</span>
                   <ArrowRight className="w-4 h-4" />
-                </Link>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </Container>

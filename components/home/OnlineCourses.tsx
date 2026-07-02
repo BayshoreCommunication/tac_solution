@@ -46,7 +46,7 @@ const COURSES = [
 
 export default function OnlineCourses() {
   return (
-    <section className="relative bg-white py-8 md:py-12 overflow-hidden border-t border-gray-100">
+    <section id="courses" className="relative bg-white py-8 md:py-12 overflow-hidden border-t border-gray-100">
       <Container className="relative z-10">
         
         {/* Header Title & Subtitle */}

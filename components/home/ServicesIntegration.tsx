@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { User, Brain, GraduationCap } from "lucide-react";
 import Container from "components/layout/Container";
 
@@ -9,6 +10,7 @@ const SERVICES = [
     badge: "Fractional CRO / vCISO",
     icon: <User className="h-7 w-7" strokeWidth={1.5} />,
     description: "Your senior risk leader — embedded, ongoing, strategic. The highest touch offer. Clients who want RiskSense often come here next.",
+    href: "/fractional-cro",
     theme: {
       borderClass: "border-t-[6px] border-t-teal-600",
       hoverBorderClass: "hover:border-teal-500",
@@ -22,6 +24,7 @@ const SERVICES = [
     badge: "AI decision support tool",
     icon: <Brain className="h-7 w-7" strokeWidth={1.5} />,
     description: "Scales your judgment across the team. A lower-friction entry point for firms not yet ready for a retainer — and a natural upsell path.",
+    href: "/#risksense",
     theme: {
       borderClass: "border-t-[6px] border-t-rose-600",
       hoverBorderClass: "hover:border-rose-500",
@@ -35,6 +38,7 @@ const SERVICES = [
     badge: "GRC education products",
     icon: <GraduationCap className="h-7 w-7" strokeWidth={1.5} />,
     description: "Broadens reach beyond direct advisory. Builds brand authority and brings new clients into the TAC Solutions ecosystem at low cost.",
+    href: "/#courses",
     theme: {
       borderClass: "border-t-[6px] border-t-orange-500",
       hoverBorderClass: "hover:border-orange-500",
@@ -63,9 +67,10 @@ export default function ServicesIntegration() {
         {/* 3-Card Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-7xl mx-auto -mt-[20px] lg:-mt-[40px]">
           {SERVICES.map((service, index) => (
-            <div
+            <Link
               key={index}
-              className={`group flex flex-col bg-white rounded-[28px] p-6 sm:p-8 border-2 border-gray-100/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${service.theme.borderClass} ${service.theme.hoverBorderClass}`}
+              href={service.href}
+              className={`group flex flex-col bg-white rounded-[28px] p-6 sm:p-8 border-2 border-gray-100/80 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] cursor-pointer ${service.theme.borderClass} ${service.theme.hoverBorderClass}`}
             >
               
               {/* Card Header (Icon, Title, Badge) */}
@@ -93,7 +98,7 @@ export default function ServicesIntegration() {
                 {service.description}
               </p>
 
-            </div>
+            </Link>
           ))}
         </div>
 

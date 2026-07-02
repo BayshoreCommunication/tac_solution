@@ -22,6 +22,7 @@ const SERVICES = [
       />
     ),
     label: "GRC Advisory",
+    href: "/services",
   },
   {
     icon: (
@@ -31,6 +32,7 @@ const SERVICES = [
       />
     ),
     label: "Fractional CRO",
+    href: "/fractional-cro",
   },
   {
     icon: (
@@ -40,6 +42,7 @@ const SERVICES = [
       />
     ),
     label: "vCISO",
+    href: "/fractional-cro",
   },
   {
     icon: (
@@ -49,6 +52,7 @@ const SERVICES = [
       />
     ),
     label: "Online Courses",
+    href: "https://eccyber.systems/",
   },
   {
     icon: (
@@ -58,6 +62,7 @@ const SERVICES = [
       />
     ),
     label: "TBD - Under Development",
+    href: "/services",
   },
 ];
 
@@ -256,9 +261,10 @@ export default function Hero() {
         <div className="w-full">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
             {SERVICES.map((service) => (
-              <div
+              <Link
                 key={service.label}
-                className="premium-card group block hover:-translate-y-2 duration-300 cursor-default select-none"
+                href={service.href}
+                className="premium-card group block hover:-translate-y-2 duration-300 cursor-pointer select-none"
               >
                 <div className="flex flex-col items-center justify-center p-4 sm:p-8 text-center h-full">
                   <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-full bg-primary/5 flex items-center justify-center mb-4 sm:mb-5 transition-all duration-300 group-hover:bg-primary group-hover:scale-110 shadow-sm border border-primary/10">
@@ -271,7 +277,7 @@ export default function Hero() {
                     {service.label}
                   </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

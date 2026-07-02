@@ -77,9 +77,10 @@ export default function ProjectServices() {
           {ENGAGEMENTS.map((item, index) => {
             const Icon = item.icon;
             return (
-              <div
+              <Link
                 key={index}
-                className="premium-card group relative flex flex-col justify-between p-6 sm:p-8 cursor-default"
+                href={`/services/${item.slug}`}
+                className="premium-card group relative flex flex-col justify-between p-6 sm:p-8 cursor-pointer"
               >
                 {/* Upper Body */}
                 <div>
@@ -108,16 +109,15 @@ export default function ProjectServices() {
 
                 {/* CTA Button pointing to details page */}
                 <div className="mt-auto">
-                  <Link
-                    href={`/services/${item.slug}`}
+                  <div
                     className="btn-outline w-full h-12 text-[14px] font-bold flex items-center justify-center gap-2"
                   >
                     <span>Explore More</span>
                     <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
-                  </Link>
+                  </div>
                 </div>
 
-              </div>
+              </Link>
             );
           })}
         </div>

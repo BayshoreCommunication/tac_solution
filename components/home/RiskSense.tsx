@@ -63,7 +63,7 @@ const STEPS = [
 
 export default function RiskSense() {
   return (
-    <section className="relative bg-white py-8 md:py-12 overflow-hidden border-t border-gray-100">
+    <section id="risksense" className="relative bg-white py-8 md:py-12 overflow-hidden border-t border-gray-100">
       <Container className="relative z-10">
         {/* Header Title & Subtitle */}
         <div className="text-center max-w-3xl mx-auto mb-20 md:mb-24">

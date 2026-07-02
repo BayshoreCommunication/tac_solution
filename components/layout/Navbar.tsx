@@ -11,6 +11,8 @@ import { ChevronDown, Menu, X, ArrowRight } from "lucide-react";
 type NavItem = {
   label: string;
   href?: string;
+  target?: string;
+  rel?: string;
   children?: { label: string; href: string; description?: string }[];
 };
 
@@ -36,6 +38,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: "Services", href: "/services" },
+  { label: "Online Courses", href: "https://eccyber.systems/", target: "_blank", rel: "noopener noreferrer" },
   { label: "Learning Hub", href: "/learning-hub" },
 ];
 
@@ -208,6 +211,8 @@ function MobileMenu({
               <Link
                 key={item.href}
                 href={item.href!}
+                target={item.target}
+                rel={item.rel}
                 onClick={onClose}
                 className="flex items-center px-3 py-3 rounded-lg text-[15px] font-medium text-gray-700 hover:bg-violet-50 hover:text-primary transition-all duration-150 mb-1"
               >
@@ -293,6 +298,8 @@ export default function Navbar() {
                   <Link
                     key={item.href}
                     href={item.href!}
+                    target={item.target}
+                    rel={item.rel}
                     className={`relative px-3 py-2 text-[15px] font-medium transition-colors duration-200 group ${
                       isActive ? "text-primary" : "text-gray-700 hover:text-primary"
                     }`}

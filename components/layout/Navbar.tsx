@@ -39,7 +39,7 @@ const NAV_ITEMS: NavItem[] = [
   },
   { label: "Services", href: "/services" },
   { label: "Online Courses", href: "https://eccyber.systems/", target: "_blank", rel: "noopener noreferrer" },
-  { label: "Learning Hub", href: "/learning-hub" },
+  { label: "Learning Hub", href: "https://eccyber.systems/", target: "_blank", rel: "noopener noreferrer" },
 ];
 
 /* ─── Dropdown ──────────────────────────────────────────── */

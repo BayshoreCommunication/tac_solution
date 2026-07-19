@@ -27,16 +27,17 @@ const ENGAGEMENTS = [
     badge: "GOVERNANCE",
     icon: Users,
     description:
-      "Scoped organization-level risk framework, reporting structure, and governance posture review. Includes presentation materials.",
-  },
-  {
-    title: "Regulatory Advisory Services",
-    slug: "regulatory-advisory-services",
-    badge: "EU REGULATORY",
-    icon: Shield,
-    description:
       "EU regulatory readiness assessment, gap analysis, and remediation roadmap.",
+    // "Scoped organization-level risk framework, reporting structure, and governance posture review. Includes presentation materials.",
   },
+  // {
+  //   title: "Regulatory Advisory Services",
+  //   slug: "regulatory-advisory-services",
+  //   badge: "EU REGULATORY",
+  //   icon: Shield,
+  //   description:
+  //     "EU regulatory readiness assessment, gap analysis, and remediation roadmap.",
+  // },
   {
     title: "IRM consulting",
     slug: "irm-consulting",
@@ -80,14 +81,14 @@ export default function ProjectServices() {
         </div>
 
         {/* 6-Card Grid (2 Rows on Desktop) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 lg:gap-4 items-stretch w-full">
           {ENGAGEMENTS.map((item, index) => {
             const Icon = item.icon;
             return (
               <Link
                 key={index}
                 href={`/services/${item.slug}`}
-                className="premium-card group relative flex flex-col justify-between p-6 sm:p-8 cursor-pointer"
+                className="premium-card group relative flex flex-col justify-between p-4 sm:p-6 cursor-pointer"
               >
                 {/* Upper Body */}
                 <div>

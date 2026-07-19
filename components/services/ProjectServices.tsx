@@ -92,7 +92,7 @@ export default function ProjectServices() {
               >
                 {/* Upper Body */}
                 <div>
-                  <div className="flex items-center gap-4 mb-6">
+                  <div className="flex flex-col items-start justify-start gap-4 mb-6">
                     {/* Icon Container */}
                     <div className="w-14 h-14 rounded-full flex items-center justify-center border flex-shrink-0 bg-gray-50 border-gray-100 text-gray-700 group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all duration-300">
                       <Icon className="h-6 w-6 transition-transform duration-300 group-hover:scale-110" />

@@ -52,19 +52,19 @@ const ENGAGEMENTS = [
     description:
       "Regulatory readiness assessment, gap analysis, and remediation roadmap.",
   },
-  {
-    title: "IRM Consulting",
-    slug: "irm-consulting",
-    badge: "TECHNOLOGY",
-    icon: (
-      <Cloud
-        className="h-8 w-8 transition-colors duration-300"
-        strokeWidth={1.5}
-      />
-    ),
-    description:
-      "Implementation oversight and advisory for ServiceNow IRM Phase 1 through go-live. Based on live integration experience.",
-  },
+  // {
+  //   title: "IRM Consulting",
+  //   slug: "irm-consulting",
+  //   badge: "TECHNOLOGY",
+  //   icon: (
+  //     <Cloud
+  //       className="h-8 w-8 transition-colors duration-300"
+  //       strokeWidth={1.5}
+  //     />
+  //   ),
+  //   description:
+  //     "Implementation oversight and advisory for ServiceNow IRM Phase 1 through go-live. Based on live integration experience.",
+  // },
   {
     title: "AI governance",
     slug: "ai-governance",
@@ -110,16 +110,16 @@ export default function ProjectEngagements() {
         </div>
 
         {/* 6-Card Grid (2 Rows on Desktop) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-8 items-stretch max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 lg:gap-4 items-stretch  mx-auto">
           {ENGAGEMENTS.map((item, index) => (
             <Link
               key={index}
               href={`/services/${item.slug}`}
-              className="group relative flex flex-col justify-between bg-white rounded-[28px] p-6 sm:p-8 border-2 border-gray-100/80 shadow-sm hover:shadow-xl hover:border-primary hover:scale-100 lg:hover:scale-[1.03] hover:z-10 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] cursor-pointer"
+              className="group relative flex flex-col justify-between bg-white rounded-[28px] p-4 sm:p-6 border-2 border-gray-100/80 shadow-sm hover:shadow-xl hover:border-primary hover:scale-100 lg:hover:scale-[1.03] hover:z-10 transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] cursor-pointer"
             >
               {/* Upper Body */}
               <div>
-                <div className="flex items-center justify-start gap-3 mb-6">
+                <div className="flex flex-col items-start justify-start gap-4 mb-6">
                   {/* Icon Wrapper */}
                   <div className="w-16 lg:w-20 lg:h-20 h-16 rounded-full flex items-center justify-center border  border-gray-100 text-gray-700 bg-primary/5 group-hover:border-primary/10 group-hover:text-primary transition-colors duration-300 shrink-0">
                     <span className="transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 inline-block">

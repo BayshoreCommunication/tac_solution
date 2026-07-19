@@ -89,7 +89,7 @@ const ENGAGEMENTS = [
       />
     ),
     description:
-      "Technology risk and compliance assessment for acquisition targets. PE portfolio and M&A advisor partnerships.",
+      "Technology risk and compliance assessment for acquisition targets. small and mid-market and M&A advisor partnerships.",
   },
 ];
 

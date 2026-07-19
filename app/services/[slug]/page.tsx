@@ -495,7 +495,7 @@ const SERVICES_DATA: Record<
     title: "M&A Risk Due Diligence",
     badge: "M&A",
     subtitle:
-      "Pre-Acquisition GRC Review. PE Portfolio Scaling. Risk Exposure Map.",
+      "Pre-Acquisition GRC Review. small and mid-market Scaling. Risk Exposure Map.",
     description:
       "Thorough technology risk, compliance, and cybersecurity assessments for target organizations.",
     icon: Handshake,
@@ -518,7 +518,7 @@ const SERVICES_DATA: Record<
         icon: FileText,
       },
       {
-        title: "PE Portfolio GRC",
+        title: "small and mid-market GRC",
         desc: "Scale standard cybersecurity baselines across portfolio companies.",
         icon: Compass,
       },

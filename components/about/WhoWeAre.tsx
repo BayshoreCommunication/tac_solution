@@ -58,8 +58,8 @@ export default function WhoWeAre() {
                 Acquisition-ready
               </h3>
               <p className="text-gray-500 text-[15px] sm:text-base leading-relaxed">
-                GRC due diligence support for M&A, PE portfolio companies, and
-                organization-level risk reporting.
+                GRC due diligence support for M&A, small and mid-market
+                companies, and organization-level risk reporting.
               </p>
             </div>
           </div>

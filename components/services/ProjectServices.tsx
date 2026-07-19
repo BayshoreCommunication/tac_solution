@@ -59,7 +59,7 @@ const ENGAGEMENTS = [
     badge: "M&A",
     icon: Handshake,
     description:
-      "Technology risk and compliance assessment for acquisition targets. PE portfolio and M&A advisor partnerships.",
+      "Technology risk and compliance assessment for acquisition targets. Small and mid-market and M&A advisor partnerships.",
   },
 ];
 

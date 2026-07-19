@@ -11,7 +11,8 @@ const TESTIMONIALS = [
     role: "Head of Sales",
     company: "Nexa Solutions",
     stars: 5,
-    quote: "TAC Solutions transformed the way we approach risk and compliance. It's not just easier to manage our frameworks now, but also more enjoyable for the team. The clarity and speed it brings have made a noticeable impact on our entire due diligence process.",
+    quote:
+      "TAC Solutions transformed the way we approach risk and compliance. It's not just easier to manage our frameworks now, but also more enjoyable for the team. The clarity and speed it brings have made a noticeable impact on our entire due diligence process.",
     image: "/images/about/team-1.png", // Will use existing image paths as fallbacks
     youtubeId: "dQw4w9WgXcQ", // Placeholder YouTube video ID
   },
@@ -20,7 +21,8 @@ const TESTIMONIALS = [
     role: "Chief Technology Officer",
     company: "Velo Security",
     stars: 5,
-    quote: "Securing cyber insurance was a nightmare until we implemented TAC Solutions' recommendations. They helped us document and prove our security posture, reducing our premiums by 30% and eliminating insurer friction entirely.",
+    quote:
+      "Securing cyber insurance was a nightmare until we implemented TAC Solutions' recommendations. They helped us document and prove our security posture, reducing our premiums by 30% and eliminating insurer friction entirely.",
     image: "/images/about/team-2.png",
     youtubeId: "dQw4w9WgXcQ",
   },
@@ -29,7 +31,8 @@ const TESTIMONIALS = [
     role: "VP of Operations",
     company: "Apex Global",
     stars: 5,
-    quote: "We were prepping for a major PE acquisition and needed to prove our GRC compliance fast. TAC Solutions stepped in with board-level reporting that wowed the investors and accelerated our deal closing by weeks.",
+    quote:
+      "We were prepping for a major PE acquisition and needed to prove our GRC compliance fast. TAC Solutions stepped in with organization-level reporting that wowed the investors and accelerated our deal closing by weeks.",
     image: "/images/about/team-3.png",
     youtubeId: "dQw4w9WgXcQ",
   },
@@ -38,7 +41,8 @@ const TESTIMONIALS = [
     role: "Director of Compliance",
     company: "Fintech Grid",
     stars: 5,
-    quote: "With DORA and NIS2 coming up, we were overwhelmed by the regulatory maze. TAC Solutions guided us through each framework systematically, building a resilient posture that will keep us compliant for years.",
+    quote:
+      "With DORA and NIS2 coming up, we were overwhelmed by the regulatory maze. TAC Solutions guided us through each framework systematically, building a resilient posture that will keep us compliant for years.",
     image: "/images/about/team-4.png",
     youtubeId: "dQw4w9WgXcQ",
   },
@@ -47,7 +51,8 @@ const TESTIMONIALS = [
     role: "Founder",
     company: "Scribe AI",
     stars: 5,
-    quote: "As a fast-growing startup, we didn't have a full-time CISO. Having TAC Solutions provide fractional vCISO leadership gave us Enterprise-grade security advisory at a fraction of the cost.",
+    quote:
+      "As a fast-growing startup, we didn't have a full-time CISO. Having TAC Solutions provide fractional vCISO leadership gave us Enterprise-grade security advisory at a fraction of the cost.",
     image: "/images/about/team-1.png",
     youtubeId: "dQw4w9WgXcQ",
   },
@@ -56,7 +61,8 @@ const TESTIMONIALS = [
     role: "General Counsel",
     company: "BioHealth Systems",
     stars: 5,
-    quote: "Compliance in healthcare is non-negotiable. TAC Solutions helped us navigate HIPAA and NIST CSF with zero downtime. Their practical approach is why they are our long-term strategic governance partner.",
+    quote:
+      "Compliance in healthcare is non-negotiable. TAC Solutions helped us navigate HIPAA and NIST CSF with zero downtime. Their practical approach is why they are our long-term strategic governance partner.",
     image: "/images/about/team-2.png",
     youtubeId: "dQw4w9WgXcQ",
   },
@@ -96,22 +102,21 @@ export default function Testimonials() {
   return (
     <section className="relative bg-white py-8 md:py-12 overflow-hidden border-t border-gray-100">
       <Container className="relative z-10">
-        
         {/* Header Block */}
         <div className="text-center max-w-4xl mx-auto mb-10 md:mb-16">
           <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 tracking-tight mb-4">
             Real Stories from <span className="text-primary">Real Users</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            Hear how TAC Solutions has helped businesses secure their infrastructure, navigate compliance, and stay risk-free.
+            Hear how TAC Solutions has helped businesses secure their
+            infrastructure, navigate compliance, and stay risk-free.
           </p>
         </div>
 
         {/* Testimonials Slider Wrapper Card */}
         <div className="relative bg-white border border-gray-100 rounded-[32px] p-6 sm:p-10 lg:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.015)]  flex items-center justify-center">
-          
           {/* Navigation - Left Arrow */}
-          <button 
+          <button
             onClick={handlePrev}
             className="absolute left-4 lg:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border border-gray-200/80 shadow-md flex items-center justify-center text-primary hover:bg-gray-50 hover:scale-105 active:scale-95 transition-all duration-300"
             aria-label="Previous story"
@@ -121,7 +126,6 @@ export default function Testimonials() {
 
           {/* Main Content Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center w-full">
-            
             {/* Left Column: Active Thumbnail/Video Player */}
             <div className="lg:col-span-4 relative w-full aspect-[4/5] rounded-[24px] overflow-hidden bg-gray-100 shadow-sm border border-gray-100/85">
               {isPlaying ? (
@@ -143,7 +147,7 @@ export default function Testimonials() {
                   />
                   {/* Subtle Dark Vignette Overlay */}
                   <div className="absolute inset-0 bg-black/15 group-hover:bg-black/20 transition-colors duration-300" />
-                  
+
                   {/* Play Button */}
                   <div className="absolute inset-0 flex items-center justify-center">
                     <button
@@ -164,7 +168,10 @@ export default function Testimonials() {
                 {/* Star Ratings */}
                 <div className="flex gap-1 mb-6">
                   {[...Array(current.stars)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-amber-400 text-amber-400" />
+                    <Star
+                      key={i}
+                      className="w-5 h-5 fill-amber-400 text-amber-400"
+                    />
                   ))}
                 </div>
 
@@ -186,7 +193,7 @@ export default function Testimonials() {
             </div>
 
             {/* Right Column: Next Preview (Slides on click) */}
-            <div 
+            <div
               onClick={handleNext}
               className="lg:col-span-3 hidden lg:block relative w-full aspect-[4/5] rounded-[24px] overflow-hidden bg-gray-100 shadow-sm border border-gray-100/85 hover:scale-[1.02] cursor-pointer group transition-all duration-500"
             >
@@ -207,18 +214,16 @@ export default function Testimonials() {
                 </div>
               </div>
             </div>
-
           </div>
 
           {/* Navigation - Right Arrow */}
-          <button 
+          <button
             onClick={handleNext}
             className="absolute right-4 lg:right-auto lg:left-[72.5%] xl:left-[73.5%] top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border border-gray-200/80 shadow-md flex items-center justify-center text-primary hover:bg-gray-50 hover:scale-105 active:scale-95 transition-all duration-300"
             aria-label="Next story"
           >
             <ArrowRight className="w-5 h-5 text-[#0A0580]" strokeWidth={2.5} />
           </button>
-
         </div>
 
         {/* Slider Navigation Dots */}
@@ -228,13 +233,14 @@ export default function Testimonials() {
               key={index}
               onClick={() => setActiveIndex(index)}
               className={`h-2.5 rounded-full transition-all duration-300 ${
-                index === activeIndex ? "w-6 bg-primary" : "w-2.5 bg-gray-200 hover:bg-gray-300"
+                index === activeIndex
+                  ? "w-6 bg-primary"
+                  : "w-2.5 bg-gray-200 hover:bg-gray-300"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
-
       </Container>
     </section>
   );

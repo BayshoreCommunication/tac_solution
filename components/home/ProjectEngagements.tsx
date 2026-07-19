@@ -27,8 +27,8 @@ const ENGAGEMENTS = [
       "Fixed-fee 30-day risk posture review. Deliverable: gap analysis + prioritized remediation roadmap. Ideal entry point.",
   },
   {
-    title: "Board risk advisory",
-    slug: "board-risk-advisory",
+    title: "Organization risk advisory",
+    slug: "organization-risk-advisory",
     badge: "GOVERNANCE",
     icon: (
       <Users
@@ -37,7 +37,7 @@ const ENGAGEMENTS = [
       />
     ),
     description:
-      "Scoped board-level risk framework, reporting structure, and governance posture review. Includes presentation materials.",
+      "Scoped organization-level risk framework, reporting structure, and governance posture review. Includes presentation materials.",
   },
   {
     title: "Regulatory Advisory",
@@ -147,9 +147,7 @@ export default function ProjectEngagements() {
 
               {/* CTA Button at bottom */}
               <div className="mt-auto">
-                <div
-                  className="btn-outline w-full h-12 lg:h-14 text-[14.5px] font-semibold flex items-center justify-center gap-2"
-                >
+                <div className="btn-outline w-full h-12 lg:h-14 text-[14.5px] font-semibold flex items-center justify-center gap-2">
                   <span>Explore More</span>
                   <ArrowRight className="w-4 h-4" />
                 </div>

@@ -47,7 +47,7 @@ const PLANS = [
     ),
     features: [
       "Full vCISO / CRO advisory function",
-      "Board-level risk reporting & presentation",
+      "Organization-level risk reporting & presentation",
       "Regulatory guidance (multi-framework)",
       "Vendor / third-party risk oversight",
       "Incident response advisory support",
@@ -73,7 +73,7 @@ const PLANS = [
       "M&A / integration risk advisory",
       "EU regulatory compliance (NIS2, DORA, AI Act)",
       "IRM implementation oversight",
-      "Board seat advisory support",
+      "Organization seat advisory support",
       "Full incident response management",
     ],
     bestFor: {

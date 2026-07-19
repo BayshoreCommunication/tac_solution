@@ -27,7 +27,7 @@ export default function AdvisoryProcessDetails() {
     },
     {
       q: "How is time and engagement structured?",
-      a: "Engagements are structured on a monthly retainer basis with a fixed bucket of hours (e.g. 10, 20, or 40 hours) for meetings, board reporting, vulnerability scans, policy development, and advisory.",
+      a: "Engagements are structured on a monthly retainer basis with a fixed bucket of hours (e.g. 10, 20, or 40 hours) for meetings, organization reporting, vulnerability scans, policy development, and advisory.",
     },
     {
       q: "How do you ensure alignment with our business goals?",
@@ -178,7 +178,7 @@ export default function AdvisoryProcessDetails() {
               <div className="premium-card p-6 sm:p-8 cursor-default h-full">
                 <ul className="space-y-4">
                   {[
-                    "Quarterly Board Reports",
+                    "Quarterly Organization Reports",
                     "Risk posture assessment and Gap analysis",
                     "Risk Metrics & KPIs",
                     "Executive Briefings",

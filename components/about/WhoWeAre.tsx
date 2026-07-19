@@ -14,8 +14,8 @@ export default function WhoWeAre() {
           </h2>
           <p className="text-sm sm:text-base text-gray-500 max-w-3xl mx-auto leading-relaxed">
             TAC Solutions embeds senior technology risk leadership into
-            mid-market boards and executive teams — keeping them compliant,
-            insurable, and acquisition-ready.
+            mid-market organizations and executive teams — keeping them
+            compliant, insurable, and acquisition-ready.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ export default function WhoWeAre() {
               </h3>
               <p className="text-gray-500 text-[15px] sm:text-base leading-relaxed">
                 GRC due diligence support for M&A, PE portfolio companies, and
-                board-level risk reporting.
+                organization-level risk reporting.
               </p>
             </div>
           </div>

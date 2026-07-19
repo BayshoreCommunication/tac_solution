@@ -45,18 +45,18 @@ const SERVICES_DATA: Record<
     pdfName: string;
   }
 > = {
-  "board-risk-advisory": {
-    title: "Board Risk Advisory",
+  "organization-risk-advisory": {
+    title: "Organization Risk Advisory",
     badge: "GOVERNANCE",
     subtitle: "Strengthen Governance. Anticipate Risk. Protect Value.",
     description:
-      "Our Board Risk Advisory service helps organizations build a resilient risk posture with clear oversight, structured reporting, and forward-looking insights.",
+      "Our Organization Risk Advisory service helps organizations build a resilient risk posture with clear oversight, structured reporting, and forward-looking insights.",
     icon: Users,
     overviewText:
-      "Boards today face a widening range of risks—from cyber threats and regulatory shifts to operational and reputational risks. We partner with your leadership team to build a robust board-level risk framework that enhances oversight, improves decision-making, and drives long-term value.",
+      "Organizations today face a widening range of risks—from cyber threats and regulatory shifts to operational and reputational risks. We partner with your leadership team to build a robust Organization-level risk framework that enhances oversight, improves decision-making, and drives long-term value.",
     highlights: [
       {
-        title: "Board-Level Focus",
+        title: "Organization-Level Focus",
         desc: "Tailored for directors and executives to support effective risk oversight.",
         icon: Users,
       },
@@ -79,7 +79,7 @@ const SERVICES_DATA: Record<
     benefits: [
       {
         title: "Strong Governance",
-        desc: "Enhance board oversight and accountability.",
+        desc: "Enhance Organization oversight and accountability.",
         icon: ShieldCheck,
       },
       {
@@ -117,7 +117,7 @@ const SERVICES_DATA: Record<
       {
         step: "04",
         title: "Enable",
-        desc: "Strengthen reporting, oversight, and board capabilities.",
+        desc: "Strengthen reporting, oversight, and Organization capabilities.",
       },
       {
         step: "05",
@@ -126,13 +126,13 @@ const SERVICES_DATA: Record<
       },
     ],
     deliverables: [
-      "Board risk framework and governance model",
+      "Organization risk framework and governance model",
       "Risk assessment and prioritization report",
       "Risk appetite and tolerance definition",
       "Dashboard and reporting structure",
-      "Board risk committee support",
+      "Organization risk committee support",
     ],
-    pdfName: "board-risk-advisory-overview.pdf",
+    pdfName: "organization-risk-advisory-overview.pdf",
   },
   "grc-rapid-assessment": {
     title: "GRC Rapid Assessment",
@@ -267,7 +267,7 @@ const SERVICES_DATA: Record<
       },
       {
         title: "Build Stakeholder Trust",
-        desc: "Assure customers, investors, and boards that data is secure.",
+        desc: "Assure customers, investors, and organizations that data is secure.",
         icon: ShieldCheck,
       },
       {
@@ -429,7 +429,7 @@ const SERVICES_DATA: Record<
       },
       {
         title: "Model Transparency",
-        desc: "Implement explainable AI criteria for board oversight.",
+        desc: "Implement explainable AI criteria for organization oversight.",
         icon: Compass,
       },
     ],
@@ -586,7 +586,7 @@ const SERVICES_DATA: Record<
 // QUICK SERVICES LIST SIDEBAR LINKS
 const QUICK_SERVICES_LINKS = [
   { label: "GRC rapid assessment", slug: "grc-rapid-assessment" },
-  { label: "Board risk advisory", slug: "board-risk-advisory" },
+  { label: "Organization risk advisory", slug: "organization-risk-advisory" },
   {
     label: "Regulatory Advisory Services",
     slug: "regulatory-advisory-services",
@@ -601,9 +601,10 @@ export default function ServiceDetailsPage() {
   const router = useRouter();
   const [downloadSuccess, setDownloadSuccess] = useState<string | null>(null);
 
-  const currentSlug = typeof slug === "string" ? slug : "board-risk-advisory";
+  const currentSlug =
+    typeof slug === "string" ? slug : "organization-risk-advisory";
   const data =
-    SERVICES_DATA[currentSlug] || SERVICES_DATA["board-risk-advisory"];
+    SERVICES_DATA[currentSlug] || SERVICES_DATA["organization-risk-advisory"];
 
   const handleDownload = (filename: string) => {
     // Trigger download of placeholder GRC policy overview
@@ -834,7 +835,8 @@ export default function ServiceDetailsPage() {
                   </h3>
                   <p className="text-[14px] text-gray-500 font-medium leading-relaxed">
                     A proven, structured process to assess, advise, and empower
-                    your board with the right risk strategy and oversight.
+                    your organization with the right risk strategy and
+                    oversight.
                   </p>
                 </div>
 
@@ -876,8 +878,8 @@ export default function ServiceDetailsPage() {
                         What We Deliver
                       </h3>
                       <p className="text-[14px] text-gray-500 font-medium leading-relaxed">
-                        Comprehensive deliverables that equip your board with
-                        clarity, visibility, and confidence.
+                        Comprehensive deliverables that equip your organization
+                        with clarity, visibility, and confidence.
                       </p>
                     </div>
 

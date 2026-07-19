@@ -130,7 +130,7 @@ const SERVICES_DATA: Record<
       "Risk assessment and prioritization report",
       "Risk appetite and tolerance definition",
       "Dashboard and reporting structure",
-      "Organization risk committee support",
+      "Organizational committee support",
     ],
     pdfName: "organization-risk-advisory-overview.pdf",
   },
@@ -181,11 +181,11 @@ const SERVICES_DATA: Record<
         desc: "Invest only in GRC controls that directly resolve your high-priority risks.",
         icon: ShieldCheck,
       },
-      {
-        title: "Accelerated Compliance",
-        desc: "Shorten compliance journeys with pre-vetted guidelines.",
-        icon: DollarSign,
-      },
+      // {
+      //   title: "Accelerated Compliance",
+      //   desc: "Shorten compliance journeys with pre-vetted guidelines.",
+      //   icon: DollarSign,
+      // },
     ],
     approach: [
       {
@@ -444,16 +444,16 @@ const SERVICES_DATA: Record<
         desc: "Ensure alignment with regional AI policies and safety mandates.",
         icon: TrendingUp,
       },
-      {
-        title: "Brand Protection",
-        desc: "Prevent reputational damage from algorithmic model failures.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Enhanced Value",
-        desc: "Increase model efficacy with clean data pipelines.",
-        icon: DollarSign,
-      },
+      // {
+      //   title: "Brand Protection",
+      //   desc: "Prevent reputational damage from algorithmic model failures.",
+      //   icon: ShieldCheck,
+      // },
+      // {
+      //   title: "Enhanced Value",
+      //   desc: "Increase model efficacy with clean data pipelines.",
+      //   icon: DollarSign,
+      // },
     ],
     approach: [
       {
@@ -486,8 +486,8 @@ const SERVICES_DATA: Record<
       "Corporate AI governance policy document",
       "AI model registry and risk classification log",
       "ISO 42001 readiness scorecard",
-      "Ethical AI assessment framework",
-      "Algorithmic risk mitigation guide",
+      // "Ethical AI assessment framework",
+      // "Algorithmic risk mitigation guide",
     ],
     pdfName: "ai-governance-overview.pdf",
   },
@@ -504,7 +504,7 @@ const SERVICES_DATA: Record<
     highlights: [
       {
         title: "Threat Discovery",
-        desc: "Reveal active security vulnerabilities and past data breaches.",
+        desc: "Assess active security vulnerabilities and past data breaches.",
         icon: Handshake,
       },
       {
@@ -518,7 +518,7 @@ const SERVICES_DATA: Record<
         icon: FileText,
       },
       {
-        title: "small and mid-market GRC",
+        title: "Small and Mid-Market GRC",
         desc: "Scale standard cybersecurity baselines across portfolio companies.",
         icon: Compass,
       },
@@ -534,21 +534,21 @@ const SERVICES_DATA: Record<
         desc: "Begin post-close GRC remediation planning before Day 1.",
         icon: TrendingUp,
       },
-      {
-        title: "Liability Shield",
-        desc: "Uncover hidden privacy violations and potential regulatory fines.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Partner Trust",
-        desc: "Assure PE investors and lenders that assets are secure.",
-        icon: DollarSign,
-      },
+      // {
+      //   title: "Liability Shield",
+      //   desc: "Uncover hidden privacy violations and potential regulatory fines.",
+      //   icon: ShieldCheck,
+      // },
+      // {
+      //   title: "Partner Trust",
+      //   desc: "Assure PE investors and lenders that assets are secure.",
+      //   icon: DollarSign,
+      // },
     ],
     approach: [
       {
         step: "01",
-        title: "Scope Scope",
+        title: "Scope",
         desc: "Establish risk assessment guidelines tailored to deal parameters.",
       },
       {

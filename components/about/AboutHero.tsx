@@ -24,7 +24,7 @@ export default function AboutHero() {
           <p className="text-sm sm:text-base text-gray-500 max-w-3xl mx-auto leading-relaxed">
             TAC Solutions embeds senior technology risk leadership into
             mid-market organizations and executive teams — keeping them
-            compliant, insurable, and acquisition-ready.
+            compliant, and acquisition-ready.
           </p>
         </div>
 

@@ -24,7 +24,7 @@ const ENGAGEMENTS = [
       />
     ),
     description:
-      "Fixed-fee 30-day risk posture review. Deliverable: gap analysis + prioritized remediation roadmap. Ideal entry point.",
+      "Fixed-fee 30-day risk posture review. Deliverable: gap analysis + prioritized remediation roadmap.",
   },
   {
     title: "Organization risk advisory",

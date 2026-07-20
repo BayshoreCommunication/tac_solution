@@ -81,7 +81,7 @@ export default function ProjectServices() {
         </div>
 
         {/* 6-Card Grid (2 Rows on Desktop) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 lg:gap-4 items-stretch w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-4 items-stretch w-full">
           {ENGAGEMENTS.map((item, index) => {
             const Icon = item.icon;
             return (

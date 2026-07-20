@@ -223,95 +223,95 @@ const SERVICES_DATA: Record<
     ],
     pdfName: "grc-rapid-assessment-overview.pdf",
   },
-  "regulatory-advisory-services": {
-    title: "Regulatory Advisory Services",
-    badge: "EU REGULATORY",
-    subtitle: "Global Compliance. Simplified Regulations. Risk Mitigation.",
-    description:
-      "Navigate the complex landscape of global regulations, including NIS2, DORA, ISO 27001, HIPAA, and ISO 42001 (AI).",
-    icon: Shield,
-    overviewText:
-      "Regulatory compliance is no longer optional; it is a fundamental business driver. We provide expert advice to help you design, mature, and maintain compliance programs that meet strict global mandates while supporting your organizational objectives.",
-    highlights: [
-      {
-        title: "NIS2 & DORA Prep",
-        desc: "Prepare for upcoming European directives and digital operational resilience acts.",
-        icon: Shield,
-      },
-      {
-        title: "ISO 42001 (AI)",
-        desc: "Govern AI developments ethically and comply with emerging AI safety acts.",
-        icon: Network,
-      },
-      {
-        title: "Multi-Framework GRC",
-        desc: "Implement unified control frameworks that satisfy multiple standards at once.",
-        icon: FileText,
-      },
-      {
-        title: "Continuous Compliance",
-        desc: "Move away from point-in-time audits toward persistent governance.",
-        icon: Compass,
-      },
-    ],
-    benefits: [
-      {
-        title: "Mitigate Penalties",
-        desc: "Avoid hefty non-compliance fines and legal liabilities.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Expand Markets",
-        desc: "Enter regulated international markets with proven compliance postures.",
-        icon: TrendingUp,
-      },
-      {
-        title: "Build Stakeholder Trust",
-        desc: "Assure customers, investors, and organizations that data is secure.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Operational Resilience",
-        desc: "Protect against systemic risks with business continuity frameworks.",
-        icon: DollarSign,
-      },
-    ],
-    approach: [
-      {
-        step: "01",
-        title: "Framework Map",
-        desc: "Map out standard requirements for your specific market sectors.",
-      },
-      {
-        step: "02",
-        title: "Readiness Check",
-        desc: "Compare current operations against framework controls.",
-      },
-      {
-        step: "03",
-        title: "Program Design",
-        desc: "Create policies and process guides for compliance gaps.",
-      },
-      {
-        step: "04",
-        title: "Implementation",
-        desc: "Embed GRC tools and train staff on standard operating procedures.",
-      },
-      {
-        step: "05",
-        title: "Validation",
-        desc: "Perform mock audits and verify control effectiveness.",
-      },
-    ],
-    deliverables: [
-      "Regulatory compliance maturity report",
-      "Custom unified control framework map",
-      "Policies and standards documentation",
-      "Audit evidence folders and artifacts",
-      "Training materials and session logs",
-    ],
-    pdfName: "regulatory-advisory-services-overview.pdf",
-  },
+  // "regulatory-advisory-services": {
+  //   title: "Regulatory Advisory Services",
+  //   badge: "EU REGULATORY",
+  //   subtitle: "Global Compliance. Simplified Regulations. Risk Mitigation.",
+  //   description:
+  //     "Navigate the complex landscape of global regulations, including NIS2, DORA, ISO 27001, HIPAA, and ISO 42001 (AI).",
+  //   icon: Shield,
+  //   overviewText:
+  //     "Regulatory compliance is no longer optional; it is a fundamental business driver. We provide expert advice to help you design, mature, and maintain compliance programs that meet strict global mandates while supporting your organizational objectives.",
+  //   highlights: [
+  //     {
+  //       title: "NIS2 & DORA Prep",
+  //       desc: "Prepare for upcoming European directives and digital operational resilience acts.",
+  //       icon: Shield,
+  //     },
+  //     {
+  //       title: "ISO 42001 (AI)",
+  //       desc: "Govern AI developments ethically and comply with emerging AI safety acts.",
+  //       icon: Network,
+  //     },
+  //     {
+  //       title: "Multi-Framework GRC",
+  //       desc: "Implement unified control frameworks that satisfy multiple standards at once.",
+  //       icon: FileText,
+  //     },
+  //     {
+  //       title: "Continuous Compliance",
+  //       desc: "Move away from point-in-time audits toward persistent governance.",
+  //       icon: Compass,
+  //     },
+  //   ],
+  //   benefits: [
+  //     {
+  //       title: "Mitigate Penalties",
+  //       desc: "Avoid hefty non-compliance fines and legal liabilities.",
+  //       icon: ShieldCheck,
+  //     },
+  //     {
+  //       title: "Expand Markets",
+  //       desc: "Enter regulated international markets with proven compliance postures.",
+  //       icon: TrendingUp,
+  //     },
+  //     {
+  //       title: "Build Stakeholder Trust",
+  //       desc: "Assure customers, investors, and organizations that data is secure.",
+  //       icon: ShieldCheck,
+  //     },
+  //     {
+  //       title: "Operational Resilience",
+  //       desc: "Protect against systemic risks with business continuity frameworks.",
+  //       icon: DollarSign,
+  //     },
+  //   ],
+  //   approach: [
+  //     {
+  //       step: "01",
+  //       title: "Framework Map",
+  //       desc: "Map out standard requirements for your specific market sectors.",
+  //     },
+  //     {
+  //       step: "02",
+  //       title: "Readiness Check",
+  //       desc: "Compare current operations against framework controls.",
+  //     },
+  //     {
+  //       step: "03",
+  //       title: "Program Design",
+  //       desc: "Create policies and process guides for compliance gaps.",
+  //     },
+  //     {
+  //       step: "04",
+  //       title: "Implementation",
+  //       desc: "Embed GRC tools and train staff on standard operating procedures.",
+  //     },
+  //     {
+  //       step: "05",
+  //       title: "Validation",
+  //       desc: "Perform mock audits and verify control effectiveness.",
+  //     },
+  //   ],
+  //   deliverables: [
+  //     "Regulatory compliance maturity report",
+  //     "Custom unified control framework map",
+  //     "Policies and standards documentation",
+  //     "Audit evidence folders and artifacts",
+  //     "Training materials and session logs",
+  //   ],
+  //   pdfName: "regulatory-advisory-services-overview.pdf",
+  // },
   // "irm-consulting": {
   //   title: "IRM Consulting",
   //   badge: "TECHNOLOGY",
@@ -587,10 +587,10 @@ const SERVICES_DATA: Record<
 const QUICK_SERVICES_LINKS = [
   { label: "GRC rapid assessment", slug: "grc-rapid-assessment" },
   { label: "Organization risk advisory", slug: "organization-risk-advisory" },
-  {
-    label: "Regulatory Advisory Services",
-    slug: "regulatory-advisory-services",
-  },
+  // {
+  //   label: "Regulatory Advisory Services",
+  //   slug: "regulatory-advisory-services",
+  // },
   // { label: "IRM consulting", slug: "irm-consulting" },
   { label: "AI Governance", slug: "ai-governance" },
   { label: "M&A risk due diligence", slug: "ma-risk-due-diligence" },

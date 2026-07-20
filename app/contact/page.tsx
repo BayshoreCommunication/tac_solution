@@ -30,9 +30,9 @@ export default function ContactPage() {
     setSubmitStatus("submitting");
     setErrorMessage("");
 
-    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+    const serviceId = "service_n9hogxm"
+    const templateId = "template_1u3ik39"
+    const publicKey = "JY9DdzqCr98Kz-u6o";
 
     // Check if emailjs keys are configured. If not, log a warning and use mock response for preview.
     if (!serviceId || !templateId || !publicKey) {

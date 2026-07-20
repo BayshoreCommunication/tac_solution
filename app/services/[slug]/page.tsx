@@ -312,96 +312,96 @@ const SERVICES_DATA: Record<
     ],
     pdfName: "regulatory-advisory-services-overview.pdf",
   },
-  "irm-consulting": {
-    title: "IRM Consulting",
-    badge: "TECHNOLOGY",
-    subtitle:
-      "Integrated Risk Management. Platform Support. ServiceNow Optimization.",
-    description:
-      "Supercharge your ServiceNow IRM deployment from configuration and data mapping through go-live and support.",
-    icon: Cloud,
-    overviewText:
-      "Platform deployments fail due to poor data structures or misalignment with business needs. We act as implementation advisors, optimizing your ServiceNow IRM settings to create automated compliance workflows and real-time risk visibility.",
-    highlights: [
-      {
-        title: "Platform Alignment",
-        desc: "Match platform configuration to your corporate risk taxonomy.",
-        icon: Cloud,
-      },
-      {
-        title: "Automated Flows",
-        desc: "Replace manual spreadsheet tracking with triggered tasks.",
-        icon: Network,
-      },
-      {
-        title: "Real-Time Reports",
-        desc: "Aggregate risk metrics into executive-facing visual dashboards.",
-        icon: FileText,
-      },
-      {
-        title: "ServiceNow Experts",
-        desc: "Leverage years of direct ServiceNow integration expertise.",
-        icon: Compass,
-      },
-    ],
-    benefits: [
-      {
-        title: "Process Efficiency",
-        desc: "Reduce compliance tracking overhead by up to 50% through automation.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Data Integrity",
-        desc: "Consolidate all GRC audit trails into a single source of truth.",
-        icon: TrendingUp,
-      },
-      {
-        title: "Better Collaboration",
-        desc: "Connect risk owners, audit teams, and leaders in one system.",
-        icon: ShieldCheck,
-      },
-      {
-        title: "Faster ROI",
-        desc: "Accelerate your ServiceNow value realization timeline.",
-        icon: DollarSign,
-      },
-    ],
-    approach: [
-      {
-        step: "01",
-        title: "Architecture",
-        desc: "Define data entities, authority documents, and risk registers.",
-      },
-      {
-        step: "02",
-        title: "Configuration",
-        desc: "Set up control objectives, indicators, and assessment flows.",
-      },
-      {
-        step: "03",
-        title: "Integration",
-        desc: "Connect ServiceNow with external security tools and assets.",
-      },
-      {
-        step: "04",
-        title: "User Training",
-        desc: "Train risk managers and control owners on platform tasks.",
-      },
-      {
-        step: "05",
-        title: "Go-Live Support",
-        desc: "Provide hands-on advisory during deployment and testing.",
-      },
-    ],
-    deliverables: [
-      "ServiceNow IRM architectural blueprint",
-      "Authority document and citation mapping",
-      "Automated risk indicator configurations",
-      "Platform dashboard layouts and reports",
-      "Admin and end-user guides",
-    ],
-    pdfName: "irm-consulting-overview.pdf",
-  },
+  // "irm-consulting": {
+  //   title: "IRM Consulting",
+  //   badge: "TECHNOLOGY",
+  //   subtitle:
+  //     "Integrated Risk Management. Platform Support. ServiceNow Optimization.",
+  //   description:
+  //     "Supercharge your ServiceNow IRM deployment from configuration and data mapping through go-live and support.",
+  //   icon: Cloud,
+  //   overviewText:
+  //     "Platform deployments fail due to poor data structures or misalignment with business needs. We act as implementation advisors, optimizing your ServiceNow IRM settings to create automated compliance workflows and real-time risk visibility.",
+  //   highlights: [
+  //     {
+  //       title: "Platform Alignment",
+  //       desc: "Match platform configuration to your corporate risk taxonomy.",
+  //       icon: Cloud,
+  //     },
+  //     {
+  //       title: "Automated Flows",
+  //       desc: "Replace manual spreadsheet tracking with triggered tasks.",
+  //       icon: Network,
+  //     },
+  //     {
+  //       title: "Real-Time Reports",
+  //       desc: "Aggregate risk metrics into executive-facing visual dashboards.",
+  //       icon: FileText,
+  //     },
+  //     {
+  //       title: "ServiceNow Experts",
+  //       desc: "Leverage years of direct ServiceNow integration expertise.",
+  //       icon: Compass,
+  //     },
+  //   ],
+  //   benefits: [
+  //     {
+  //       title: "Process Efficiency",
+  //       desc: "Reduce compliance tracking overhead by up to 50% through automation.",
+  //       icon: ShieldCheck,
+  //     },
+  //     {
+  //       title: "Data Integrity",
+  //       desc: "Consolidate all GRC audit trails into a single source of truth.",
+  //       icon: TrendingUp,
+  //     },
+  //     {
+  //       title: "Better Collaboration",
+  //       desc: "Connect risk owners, audit teams, and leaders in one system.",
+  //       icon: ShieldCheck,
+  //     },
+  //     {
+  //       title: "Faster ROI",
+  //       desc: "Accelerate your ServiceNow value realization timeline.",
+  //       icon: DollarSign,
+  //     },
+  //   ],
+  //   approach: [
+  //     {
+  //       step: "01",
+  //       title: "Architecture",
+  //       desc: "Define data entities, authority documents, and risk registers.",
+  //     },
+  //     {
+  //       step: "02",
+  //       title: "Configuration",
+  //       desc: "Set up control objectives, indicators, and assessment flows.",
+  //     },
+  //     {
+  //       step: "03",
+  //       title: "Integration",
+  //       desc: "Connect ServiceNow with external security tools and assets.",
+  //     },
+  //     {
+  //       step: "04",
+  //       title: "User Training",
+  //       desc: "Train risk managers and control owners on platform tasks.",
+  //     },
+  //     {
+  //       step: "05",
+  //       title: "Go-Live Support",
+  //       desc: "Provide hands-on advisory during deployment and testing.",
+  //     },
+  //   ],
+  //   deliverables: [
+  //     "ServiceNow IRM architectural blueprint",
+  //     "Authority document and citation mapping",
+  //     "Automated risk indicator configurations",
+  //     "Platform dashboard layouts and reports",
+  //     "Admin and end-user guides",
+  //   ],
+  //   pdfName: "irm-consulting-overview.pdf",
+  // },
   "ai-governance": {
     title: "AI Governance",
     badge: "AI",
@@ -591,7 +591,7 @@ const QUICK_SERVICES_LINKS = [
     label: "Regulatory Advisory Services",
     slug: "regulatory-advisory-services",
   },
-  { label: "IRM consulting", slug: "irm-consulting" },
+  // { label: "IRM consulting", slug: "irm-consulting" },
   { label: "AI Governance", slug: "ai-governance" },
   { label: "M&A risk due diligence", slug: "ma-risk-due-diligence" },
 ];

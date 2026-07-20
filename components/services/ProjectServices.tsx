@@ -38,14 +38,14 @@ const ENGAGEMENTS = [
   //   description:
   //     "EU regulatory readiness assessment, gap analysis, and remediation roadmap.",
   // },
-  {
-    title: "IRM consulting",
-    slug: "irm-consulting",
-    badge: "TECHNOLOGY",
-    icon: Cloud,
-    description:
-      "Implementation oversight and advisory for IRM Phase 1 through go-live. Based on live integration experience.",
-  },
+  // {
+  //   title: "IRM consulting",
+  //   slug: "irm-consulting",
+  //   badge: "TECHNOLOGY",
+  //   icon: Cloud,
+  //   description:
+  //     "Implementation oversight and advisory for IRM Phase 1 through go-live. Based on live integration experience.",
+  // },
   {
     title: "AI Governance",
     slug: "ai-governance",

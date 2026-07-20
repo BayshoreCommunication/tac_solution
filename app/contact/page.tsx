@@ -74,12 +74,6 @@ export default function ContactPage() {
     }
   };
 
-  const isEmailJSConfigured = !!(
-    process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID &&
-    process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID &&
-    process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-  );
-
   return (
     <>
       {/* Hero */}
@@ -212,18 +206,6 @@ export default function ContactPage() {
                   </p>
 
                   <form onSubmit={handleSubmit} className="mt-10 space-y-6">
-                    {!isEmailJSConfigured && (
-                      <div className="flex items-start gap-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-amber-800">
-                        <AlertTriangle size={20} className="mt-0.5 shrink-0 text-amber-600" />
-                        <div>
-                          <h4 className="font-semibold text-amber-900">Running in Simulation Mode</h4>
-                          <p className="mt-1 text-sm text-amber-700">
-                            EmailJS environment variables are not loaded. Submissions will simulate success but will not send a real email. Please restart your Next.js development server after configuring <code>.env.local</code>.
-                          </p>
-                        </div>
-                      </div>
-                    )}
-
                     {submitStatus === "error" && (
                       <div className="flex items-start gap-4 rounded-xl border border-red-200 bg-red-50 p-4 text-red-800">
                         <AlertTriangle size={20} className="mt-0.5 shrink-0" />

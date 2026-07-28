@@ -40,9 +40,9 @@ const ENGAGEMENTS = [
       "Scoped organization-level risk framework, reporting structure, and governance posture review. Includes presentation materials.",
   },
   {
-    title: "Regulatory Advisory",
-    slug: "regulatory-advisory-services",
-    badge: "EU REGULATORY",
+    title: "Risk Advisory",
+    slug: "risk-advisory-services",
+    badge: "EU Risk",
     icon: (
       <Globe
         className="h-8 w-8 transition-colors duration-300"
@@ -50,7 +50,7 @@ const ENGAGEMENTS = [
       />
     ),
     description:
-      "Regulatory readiness assessment, gap analysis, and remediation roadmap.",
+      "Expert risk advisory services to identify, assess, and mitigate business, operational, and compliance risks.",
   },
   // {
   //   title: "IRM Consulting",

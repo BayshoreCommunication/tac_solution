@@ -2,7 +2,17 @@
 
 import { useState } from "react";
 import CTA from "components/about/CTA";
-import { ArrowRight, Mail, MapPin, Phone, Clock, Send, CheckCircle2, AlertTriangle, Loader2 } from "lucide-react";
+import {
+  ArrowRight,
+  Mail,
+  MapPin,
+  Phone,
+  Clock,
+  Send,
+  CheckCircle2,
+  AlertTriangle,
+  Loader2,
+} from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 export default function ContactPage() {
@@ -15,11 +25,15 @@ export default function ContactPage() {
     message: "",
   });
 
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "submitting" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -30,16 +44,16 @@ export default function ContactPage() {
     setSubmitStatus("submitting");
     setErrorMessage("");
 
-    const serviceId = "service_n9hogxm"
-    const templateId = "template_1u3ik39"
+    const serviceId = "service_n9hogxm";
+    const templateId = "template_1u3ik39";
     const publicKey = "JY9DdzqCr98Kz-u6o";
 
     // Check if emailjs keys are configured. If not, log a warning and use mock response for preview.
     if (!serviceId || !templateId || !publicKey) {
       console.warn(
-        "EmailJS environment variables (NEXT_PUBLIC_EMAILJS_SERVICE_ID, NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) are not set. Simulating submission in development mode."
+        "EmailJS environment variables (NEXT_PUBLIC_EMAILJS_SERVICE_ID, NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, NEXT_PUBLIC_EMAILJS_PUBLIC_KEY) are not set. Simulating submission in development mode.",
       );
-      
+
       // Simulate API call
       setTimeout(() => {
         setSubmitStatus("success");
@@ -69,7 +83,9 @@ export default function ContactPage() {
       });
     } catch (error: any) {
       console.error("Failed to send email:", error);
-      setErrorMessage(error?.text || "An unexpected error occurred. Please try again.");
+      setErrorMessage(
+        error?.text || "An unexpected error occurred. Please try again.",
+      );
       setSubmitStatus("error");
     }
   };
@@ -77,7 +93,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-b from-[#F7F8FC] to-white py-20 lg:py-28">
+      <section className="bg-gradient-to-b from-[#F7F8FC] to-white py-20 ">
         <div className="container mx-auto max-w-7xl px-6">
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center rounded-full border border-violet-200 bg-violet-50 px-4 py-2 text-sm font-semibold text-violet-700">
@@ -201,8 +217,8 @@ export default function ContactPage() {
                   </h2>
 
                   <p className="mt-3 text-slate-600">
-                    Fill out the form below and we&apos;ll get back to you within
-                    one business day.
+                    Fill out the form below and we&apos;ll get back to you
+                    within one business day.
                   </p>
 
                   <form onSubmit={handleSubmit} className="mt-10 space-y-6">
@@ -212,7 +228,8 @@ export default function ContactPage() {
                         <div>
                           <h4 className="font-semibold">Submission Failed</h4>
                           <p className="mt-1 text-sm text-red-700">
-                            {errorMessage || "Failed to send message. Please verify your internet connection and try again."}
+                            {errorMessage ||
+                              "Failed to send message. Please verify your internet connection and try again."}
                           </p>
                         </div>
                       </div>

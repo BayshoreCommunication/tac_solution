@@ -42,7 +42,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: "Learning Hub", href: "https://eccyber.systems/", target: "_blank", rel: "noopener noreferrer" },
 ];
 
-/* ─── Dropdown ──────────────────────────────────────────── */
+/* ─── Dropdown ──── */
 
 function Dropdown({
   item,

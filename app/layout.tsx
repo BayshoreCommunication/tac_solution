@@ -15,7 +15,7 @@ const lexend = Lexend({
   variable: "--font-lexend",
 });
 
-const siteUrl = "https://tac-solution.vercel.app";
+const siteUrl = "https://www.tacsolutionsllp.com";
 const ogImageUrl = `${siteUrl}/og-image.png`;
 
 /* ---------------- METADATA ---------------- */
@@ -23,7 +23,7 @@ const ogImageUrl = `${siteUrl}/og-image.png`;
 export const metadata: Metadata = {
   title: "TAC Solutions",
   description: "Empowering learners with in-demand tech skills, real-world projects, and career support to build a better future.",
-  metadataBase: new URL("https://tac-solution.vercel.app"),
+  metadataBase: new URL("https://www.tacsolutionsllp.com"),
   alternates: {
     canonical: "/",
     languages: {

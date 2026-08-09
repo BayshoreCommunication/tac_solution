@@ -34,7 +34,7 @@ const SERVICES = [
     },
   },
   {
-    title: "Online courses",
+    title: "Learning Hub",
     badge: "GRC education products",
     icon: <GraduationCap className="h-7 w-7" strokeWidth={1.5} />,
     description: "Broadens reach beyond direct advisory. Builds brand authority and brings new clients into the TAC Solutions ecosystem at low cost.",

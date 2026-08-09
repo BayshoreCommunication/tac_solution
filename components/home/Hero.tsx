@@ -51,7 +51,7 @@ const SERVICES = [
         strokeWidth={1.5}
       />
     ),
-    label: "Online Courses",
+    label: "Learning Hub",
     href: "https://eccyber.systems/",
   },
   {

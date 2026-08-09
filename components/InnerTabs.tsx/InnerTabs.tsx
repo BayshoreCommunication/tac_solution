@@ -11,7 +11,7 @@ import ServicesIntegration from "components/home/ServicesIntegration";
 
 const tabs = [
   { id: "retainer", label: "Retainer Model" },
-  { id: "courses", label: "Online Courses" },
+  { id: "courses", label: "Learning Hub" },
   { id: "projects", label: "Project Engagements" },
   { id: "risksense", label: "RiskSense" },
   { id: "pricing", label: "RiskSense Pricing" },

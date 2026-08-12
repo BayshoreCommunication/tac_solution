@@ -39,16 +39,17 @@ const NAV_ITEMS: NavItem[] = [
   },
   { label: "Services", href: "/services" },
   // { label: "Online Courses", href: "https://eccyber.systems/", target: "_blank", rel: "noopener noreferrer" },
-  { label: "Learning Hub", href: "https://eccyber.systems/", target: "_blank", rel: "noopener noreferrer" },
+  {
+    label: "Learning Hub",
+    href: "https://www.eccybersystems.com",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
 ];
 
 /* ─── Dropdown ──── */
 
-function Dropdown({
-  item,
-}: {
-  item: NavItem;
-}) {
+function Dropdown({ item }: { item: NavItem }) {
   return (
     <div className="relative group">
       <Link
@@ -104,7 +105,7 @@ function MobileMenu({
 
   useEffect(() => {
     onClose();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
   useEffect(() => {
@@ -123,7 +124,9 @@ function MobileMenu({
       {/* Backdrop */}
       <div
         className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-40 transition-opacity duration-300 lg:hidden ${
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          isOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
         onClick={onClose}
       />
@@ -180,7 +183,9 @@ function MobileMenu({
                       <ChevronDown
                         size={16}
                         className={`transition-transform duration-300 ${
-                          isExpanded ? "rotate-180 text-primary" : "text-gray-400"
+                          isExpanded
+                            ? "rotate-180 text-primary"
+                            : "text-gray-400"
                         }`}
                       />
                     </button>
@@ -267,16 +272,19 @@ export default function Navbar() {
       <header className="fixed top-0 left-0 right-0 z-30 bg-white shadow-[0_2px_20px_rgba(0,0,0,0.08)] border-b border-gray-100">
         <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-8 lg:px-8">
           <div className="flex items-center justify-between h-[72px]">
-
             {/* ── Logo ── */}
-            <Link href="/" className="flex-shrink-0 flex items-center gap-2.5 group">
+            <Link
+              href="/"
+              className="flex-shrink-0 flex items-center gap-2.5 group"
+            >
               <div className="relative flex-shrink-0 w-[130px] sm:w-[155px] lg:w-[175px]">
-                <Image src="/images/logo.png" 
-                alt="Logo" 
-                width={1000} 
-                height={800} 
-                className="w-full h-auto object-contain"
-                priority
+                <Image
+                  src="/images/logo.png"
+                  alt="Logo"
+                  width={1000}
+                  height={800}
+                  className="w-full h-auto object-contain"
+                  priority
                 />
               </div>
             </Link>
@@ -285,12 +293,7 @@ export default function Navbar() {
             <nav className="hidden lg:flex items-center gap-1">
               {NAV_ITEMS.map((item) => {
                 if (item.children) {
-                  return (
-                    <Dropdown
-                      key={item.label}
-                      item={item}
-                    />
-                  );
+                  return <Dropdown key={item.label} item={item} />;
                 }
 
                 const isActive = pathname === item.href;
@@ -301,14 +304,18 @@ export default function Navbar() {
                     target={item.target}
                     rel={item.rel}
                     className={`relative px-3 py-2 text-[15px] font-medium transition-colors duration-200 group ${
-                      isActive ? "text-primary" : "text-gray-700 hover:text-primary"
+                      isActive
+                        ? "text-primary"
+                        : "text-gray-700 hover:text-primary"
                     }`}
                   >
                     {item.label}
                     {/* underline */}
                     <span
                       className={`absolute bottom-0 left-3 right-3 h-[2px] bg-primary rounded-full transition-transform duration-300 origin-left ${
-                        isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
+                        isActive
+                          ? "scale-x-100"
+                          : "scale-x-0 group-hover:scale-x-100"
                       }`}
                     />
                   </Link>
@@ -338,7 +345,6 @@ export default function Navbar() {
             >
               <Menu size={22} className="text-gray-700" />
             </button>
-
           </div>
         </div>
       </header>

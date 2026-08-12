@@ -52,7 +52,7 @@ const SERVICES = [
       />
     ),
     label: "Learning Hub",
-    href: "https://eccyber.systems/",
+    href: "https://www.eccybersystems.com",
   },
   {
     icon: (
@@ -78,9 +78,7 @@ const FEATURE_TAGS = [
     className: "hero-feature-card-1",
   },
   {
-    icon: (
-      <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2.1} />
-    ),
+    icon: <GraduationCap className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2.1} />,
     label: "Education",
     className: "hero-feature-card-2",
   },
@@ -109,28 +107,14 @@ function HeroLogoGlyph() {
           <stop offset="1" stopColor="#361dd3" />
         </linearGradient>
       </defs>
-      <path
-        d="M40 55L98 23l31 17-58 33-31-18Z"
-        fill="url(#heroGlyphTop)"
-      />
-      <path
-        d="M40 55l31 18v68l-31-17V55Z"
-        fill="url(#heroGlyphEdge)"
-      />
+      <path d="M40 55L98 23l31 17-58 33-31-18Z" fill="url(#heroGlyphTop)" />
+      <path d="M40 55l31 18v68l-31-17V55Z" fill="url(#heroGlyphEdge)" />
       <path
         d="M71 73l58-33v28l-31 18v57l-27-15V73Z"
         fill="url(#heroGlyphSide)"
       />
-      <path
-        d="M92 91l27-15v43l-27 15V91Z"
-        fill="#6d55ff"
-        opacity="0.96"
-      />
-      <path
-        d="M55 63l44-24 13 7-44 25-13-8Z"
-        fill="#ffffff"
-        opacity="0.2"
-      />
+      <path d="M92 91l27-15v43l-27 15V91Z" fill="#6d55ff" opacity="0.96" />
+      <path d="M55 63l44-24 13 7-44 25-13-8Z" fill="#ffffff" opacity="0.2" />
     </svg>
   );
 }
@@ -151,10 +135,7 @@ function HeroIllustration() {
           className="hero-connector hero-connector-0"
           d="M350 168C390 168 404 108 443 108"
         />
-        <path
-          className="hero-connector hero-connector-1"
-          d="M357 260H443"
-        />
+        <path className="hero-connector hero-connector-1" d="M357 260H443" />
         <path
           className="hero-connector hero-connector-2"
           d="M350 352C390 352 404 412 443 412"
@@ -207,15 +188,16 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           <div className="lg:col-span-6 flex flex-col justify-center text-center lg:text-left order-2 lg:order-1">
             <h1 className="text-3xl sm:text-6xl font-bold leading-[1.15] tracking-tight text-gray-900 mb-3">
-              Strategic Governance,<br className="hidden sm:inline" />
+              Strategic Governance,
+              <br className="hidden sm:inline" />
               <span className="text-primary"> Risk &amp; Compliance </span>
               <br className="hidden sm:inline" />
               Solutions for Modern Organizations
             </h1>
 
             <p className="text-[16px] md:text-[17px] leading-[1.8] text-gray-500 mb-4 max-w-[580px] mx-auto lg:mx-0">
-              Empowering businesses with expert cybersecurity, governance,
-              risk, and compliance services. From virtual CISO leadership to
+              Empowering businesses with expert cybersecurity, governance, risk,
+              and compliance services. From virtual CISO leadership to
               regulatory compliance and risk management, we help organizations
               strengthen security, reduce risk, and build trust.
             </p>

@@ -36,14 +36,15 @@ const SERVICES = [
   },
   {
     icon: (
-      <UserCheck
+      <Smartphone
         className="h-6 w-6 text-primary group-hover:text-white transition-colors duration-300"
         strokeWidth={1.5}
       />
     ),
-    label: "vCISO",
-    href: "/fractional-cro",
+    label: "TBD - Under Development",
+    href: "/services",
   },
+
   {
     icon: (
       <GraduationCap
@@ -56,13 +57,13 @@ const SERVICES = [
   },
   {
     icon: (
-      <Smartphone
+      <UserCheck
         className="h-6 w-6 text-primary group-hover:text-white transition-colors duration-300"
         strokeWidth={1.5}
       />
     ),
-    label: "TBD - Under Development",
-    href: "/services",
+    label: "vCISO",
+    href: "/fractional-cro",
   },
 ];
 
